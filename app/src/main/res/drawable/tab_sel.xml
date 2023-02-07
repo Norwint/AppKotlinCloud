@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp" />
+            <size
+                android:width="270dp"
+                android:height="85dp" />
+            <gradient
+                android:centerColor="@color/tab_shadow_end"
+                android:endColor="@android:color/white"
+                android:gradientRadius="600"
+                android:startColor="@color/tab_shadow_start"
+                android:type="radial" />
+        </shape>
+    </item>
+    <item
+        android:left="2dp"
+        android:right="2dp"
+        android:top="2dp">
+        <shape android:shape="rectangle">
+            <corners
+                android:topLeftRadius="10dp"
+                android:topRightRadius="10dp" />
+            <solid android:color="@color/tab_selected" />
+            <size
+                android:width="270dp"
+                android:height="85dp" />
+        </shape>
+    </item>
+</layer-list>
+
+

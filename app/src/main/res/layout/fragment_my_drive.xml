@@ -1,0 +1,640 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".fragments.MyDriveFragment">
+
+    <ScrollView
+        android:id="@+id/my_drive_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFFFF"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <com.otcengineering.white_app.components.CustomTabLayout
+                android:id="@+id/my_drive_customTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tab1text="@string/daily"
+                app:tab2text="@string/weekly"
+                app:tab3text="@string/monthly" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/TitleDate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimaryDark"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text=""
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_weight="0.49"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:id="@+id/globalRanking"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/my_edittext_bg_states"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/GlobalIconTop"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:padding="10dp"
+                            android:src="@drawable/my_drive_icons_17" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/global_ranking_best_drive"
+                        android:textAlignment="center"
+                        android:textColor="#032E7B"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textGlobalTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="#FF0000"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/localRanking"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+
+                    <!--  layout de imatge best driver local-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/my_edittext_bg_states"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/LocalIconTop"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+
+                            android:layout_gravity="center"
+
+                            android:padding="10dp"
+
+                            app:srcCompat="@drawable/my_drive_icons_17" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:text="@string/local_ranking_best_drive"
+                        android:textAlignment="center"
+
+                        android:textColor="#032E7B"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/textLocalTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="30sp" />
+
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.27"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/mileage"
+                    android:textColor="#032E7B"
+                    android:textStyle="bold" />
+
+                <!--- aqui agafo el my_edittext que te la configuracio dels borders
+                      aquest es el layout del mileage
+                -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/my_edittext_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/mileageOpen"
+                        android:layout_width="178dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/go_to_charts_states"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:weightSum="1">
+
+                            <com.ethanco.circleprogresslibrary.CircleProgress
+                                android:id="@+id/progressMileage"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                app:foreEndColor="@color/colorPrimaryDark"
+                                app:foreStartColor="@color/colorPrimary"
+                                custom:bgColor="#eaedf2"
+                                custom:currProgress="160"
+                                custom:maxProgress="360"
+                                custom:progressInitialPosition="100"
+                                custom:progressWidth="8dp"
+                                custom:useAnimation="true" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:text="@string/average"
+                                android:textColor="#9999B8"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/AverageMileage"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.41"
+                                android:textColor="#011D67"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total"
+                                android:textColor="#9999B8"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/TotalMileage"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.65"
+                                android:textColor="#032E7B"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!--- dins d'aquest layout el backgorund es el color -->
+                    <LinearLayout
+                        android:id="@+id/layoutMileage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/RankingLocalMileage"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/my_edittext_bg3_states"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/LocalIconMileage"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/my_drive_icons_17" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/RankingGlobalMileage"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/my_edittext_bg2_states"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="horizontal"
+                            android:visibility="invisible"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/GlobalIconMileage"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/my_drive_icons_17" />
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--- layout de Eco driving -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="18dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text="@string/eco_driving"
+                    android:textColor="#032E7B"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/my_edittext_bg"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/ecoOpen"
+                        android:layout_width="178dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/go_to_charts_states"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:layout_width="80dp"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:paddingTop="10dp"
+                            android:weightSum="1">
+
+                            <com.ethanco.circleprogresslibrary.CircleProgress
+                                android:id="@+id/progressEco"
+                                android:layout_width="75dp"
+                                android:layout_height="75dp"
+                                android:layout_gravity="center"
+                                app:foreEndColor="@color/colorPrimaryDark"
+                                app:foreStartColor="@color/colorPrimary"
+                                custom:bgColor="#eaedf2"
+                                custom:currProgress="160"
+                                custom:maxProgress="360"
+                                custom:progressInitialPosition="100"
+                                custom:progressWidth="8dp"
+                                custom:useAnimation="true" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:paddingTop="5dp"
+                                android:text="@string/km_liters"
+
+                                android:textColor="#9999B8"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/AverageEco"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_weight="0.44"
+                                android:textColor="#032E7B"
+                                android:textSize="16sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/total"
+                                android:textColor="#9999B8"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/TotalEco"
+
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:textColor="#032E7B"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="1">
+
+                        <LinearLayout
+                            android:id="@+id/RankingLocalEco"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/my_edittext_bg3_states"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/LocalIconEco"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                app:srcCompat="@drawable/my_drive_icons_17" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/RankingGlobalEco"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/my_edittext_bg2_states"
+                            android:clickable="true"
+                            android:focusable="true"
+                            android:orientation="horizontal"
+                            android:visibility="invisible"
+                            android:weightSum="1">
+
+                            <ImageView
+                                android:id="@+id/GlobalIconEco"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_gravity="center"
+                                android:layout_marginStart="15dp"
+                                android:layout_marginEnd="10dp"
+                                android:src="@drawable/my_drive_icons_17" />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingStart="10dp"
+                android:paddingTop="18dp"
+                android:paddingRight="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="180dp"
+
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="3dp"
+                        android:text="@string/safety_driving"
+                        android:textColor="#032E7B"
+                        android:textStyle="bold" />
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="20dp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/badges"
+
+                        android:textColor="#032E7B"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="112dp"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/safetyOpen"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/my_edittext_bg_states"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:orientation="horizontal"
+                        android:paddingStart="18dp"
+                        android:weightSum="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/badges"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+
+                        <com.ethanco.circleprogresslibrary.CircleProgress
+                            android:id="@+id/progressSafety"
+                            android:layout_width="75dp"
+                            android:layout_height="75dp"
+                            android:layout_gravity="center"
+                            app:foreEndColor="@color/colorPrimaryDark"
+                            app:foreStartColor="@color/colorPrimary"
+                            custom:bgColor="#eaedf2"
+                            custom:currProgress="160"
+                            custom:maxProgress="360"
+                            custom:progressInitialPosition="100"
+                            custom:progressWidth="8dp"
+                            custom:useAnimation="true" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:orientation="vertical"
+                            android:paddingTop="30dp"
+                            android:weightSum="1">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/score"
+                                android:textAlignment="center" />
+
+                            <TextView
+                                android:id="@+id/SafetyDriving"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="0.65"
+                                android:textAlignment="center"
+                                android:textColor="#032E7B"
+                                android:textSize="20sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/badges"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:background="@drawable/my_edittext_bg"
+                        android:baselineAligned="false"
+                        android:gravity="center_vertical"
+                        android:layerType="software"
+                        android:orientation="vertical"
+                        android:weightSum="1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/safetyOpen"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <TextView
+                            android:id="@+id/tv_totalbadges"
+                            android:layout_width="match_parent"
+                            android:layout_height="3dp"
+                            android:layout_weight="0.56"
+                            android:paddingEnd="15dp"
+                            android:text=""
+                            android:textAlignment="viewEnd"
+                            android:textColor="#032E7B"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="3dp"
+                            android:src="@drawable/my_drive_icons_7" />
+                    </LinearLayout>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/my_drive_btnScrollUp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circle_red_background"
+        android:backgroundTint="@color/colorPrimary"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_up_white" />
+    </FrameLayout>
+</FrameLayout>

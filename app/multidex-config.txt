@@ -1,0 +1,2 @@
+com/crashlytics/android/CrashlyticsInitProvider
+android/support/v4/content/FileProvider

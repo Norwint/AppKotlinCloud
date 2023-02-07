@@ -1,0 +1,167 @@
+{
+  "project_info": {
+    "project_number": "480644423373",
+    "firebase_url": "https://connectech-9ea48.firebaseio.com",
+    "project_id": "connectech-9ea48",
+    "storage_bucket": "connectech-9ea48.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480644423373:android:9b084606f2496ad96f9384",
+        "android_client_info": {
+          "package_name": "com.otcengineering.cardoorble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOP__9opagGGM80EjXDe0YZWncfM3ukI"
+        },
+        {
+          "current_key": "AIzaSyCSGVdNLQA_zvAUekOsyIX6vf4LrEcX25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480644423373-8lujdlgv78ag96e5obm08rb132gtnddg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.otcengineering.bleTest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480644423373:android:95443dedc91adbc06f9384",
+        "android_client_info": {
+          "package_name": "com.otcengineering.seattester"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOP__9opagGGM80EjXDe0YZWncfM3ukI"
+        },
+        {
+          "current_key": "AIzaSyCSGVdNLQA_zvAUekOsyIX6vf4LrEcX25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480644423373-8lujdlgv78ag96e5obm08rb132gtnddg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.otcengineering.bleTest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480644423373:android:163489e589c50b226f9384",
+        "android_client_info": {
+          "package_name": "com.otcengineering.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOP__9opagGGM80EjXDe0YZWncfM3ukI"
+        },
+        {
+          "current_key": "AIzaSyCSGVdNLQA_zvAUekOsyIX6vf4LrEcX25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480644423373-8lujdlgv78ag96e5obm08rb132gtnddg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.otcengineering.bleTest"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480644423373:android:7a95ecf5628c22e96f9384",
+        "android_client_info": {
+          "package_name": "com.otcengineering.white_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkOP__9opagGGM80EjXDe0YZWncfM3ukI"
+        },
+        {
+          "current_key": "AIzaSyCSGVdNLQA_zvAUekOsyIX6vf4LrEcX25Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480644423373-c6mdj2k6prmhq2fq9vvfn74sitkqkemt.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "480644423373-8lujdlgv78ag96e5obm08rb132gtnddg.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.otcengineering.bleTest"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

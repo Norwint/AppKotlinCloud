@@ -1,0 +1,812 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/vin_numbersp" />
+            <LinearLayout
+                android:id="@+id/layoutVin"
+                android:layout_width="325dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/etVin"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/the_number_is"
+                    android:backgroundTint="@color/strokeButton"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal"
+                    android:duplicateParentState="true"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:cursorVisible="false" />
+            </LinearLayout>
+
+
+
+
+            <TextView
+
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="@string/car_modelsp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+
+            <EditText
+                android:id="@+id/etCarModel"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:cursorVisible="false"
+                android:backgroundTint="@color/strokeButton"
+                android:textColor="@color/quantum_black_100"
+                android:ems="10"
+                android:inputType="textPersonName"
+                android:hint="@string/model_grade"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:text="@string/serial_numbersp"
+                android:layout_marginTop="32dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp" />
+            <LinearLayout
+                android:id="@+id/layoutSerialNumber"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" >
+
+                <TextView
+                    android:id="@+id/etSerialNumber"
+                    style="@style/Widget.AppCompat.EditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/strokeButton"
+                    android:clickable="false"
+                    android:drawableRight="@drawable/qr_small"
+                    android:duplicateParentState="true"
+                    android:ems="10"
+                    android:hint="@string/the_number_is"
+                    android:maxLength="16"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" />
+        </LinearLayout>
+
+            <TextView
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="32dp"
+                android:text="@string/plate"/>
+
+            <EditText
+                android:id="@+id/etPlate"
+                android:layout_width="325dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/plate_number"
+                android:inputType="textPersonName"
+                android:textColor="@color/quantum_black_100"
+
+                android:layout_marginTop="0dp"/>
+
+            <LinearLayout
+                android:layout_width="325dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="32dp"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <Switch
+                    android:id="@+id/swiAutocall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+
+                    android:layout_marginStart="8dp"
+                    android:checked="true"
+                    android:theme="@style/SwitchColor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_weight="0.01"
+                    android:text="@string/autocall" />
+
+                <TextView
+                    android:id="@+id/txtOnOff"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginStart="8dp"
+
+                    android:layout_weight="0.01"
+                    android:text="@string/on"
+                    android:textColor="@color/quantum_black_100" />
+
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="24dp"
+                android:background="@color/signup_sep"
+
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/signup_back1"
+                android:orientation="vertical"
+                android:gravity="center"
+                >
+
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_weight="1"
+                    android:text="@string/full_namesp" />
+                <EditText
+                    android:id="@+id/etFullName"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:drawableRight="@drawable/ic_clear_black_24dp"
+                    android:ems="10"
+                    android:hint="@string/full_name"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" />
+
+                <CheckBox
+                    android:id="@+id/ckOwner"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/car_owner"
+                    android:textColor="@color/colorTexto"
+                    android:theme="@style/CheckBoxColor" />
+
+
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="32dp"
+                        android:layout_weight="1"
+                        android:text="@string/sexsp" />
+
+                    <TextView
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="0dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="32dp"
+
+                        android:text="@string/birth_datesp" />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="325dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/etSex"
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/strokeButton"
+                        android:cursorVisible="false"
+                        android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/guiones"
+                        android:textColor="@color/quantum_black_100" />
+
+                    <EditText
+                        android:id="@+id/etBirthDate"
+                        android:layout_width="154dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginEnd="0dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/strokeButton"
+                        android:cursorVisible="false"
+                        android:digits="0123456789-"
+                        android:drawableEnd="@drawable/ic_clear_black_24dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:hint="@string/dd_mm_yy"
+                        android:inputType="date"
+
+                        android:textColor="@color/quantum_black_100"
+                        android:textCursorDrawable="@null"
+                        android:typeface="normal" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/blood_type_st"
+                    />
+
+                <EditText
+                    android:id="@+id/etBloodType"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:hint="@string/guiones"
+                    android:inputType="textPersonName" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/countrysp" />
+
+                <EditText
+                    android:id="@+id/etCountry"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/guiones"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/regionsp" />
+
+                <EditText
+                    android:id="@+id/etRegion"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/guiones"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/locationsp"
+                    android:inputType="textPersonName" />
+
+                <EditText
+                    android:id="@+id/etLocation"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:drawableRight="@drawable/ic_clear_black_24dp"
+                    android:ems="10"
+                    android:hint="@string/you_location"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="Postal code*" />
+
+                <EditText
+                    android:id="@+id/etPostalCode"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:drawableRight="@drawable/ic_clear_black_24dp"
+                    android:ems="10"
+                    android:hint="Your postal code"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/address" />
+
+                <EditText
+                    android:id="@+id/etAddress"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:drawableRight="@drawable/ic_clear_black_24dp"
+                    android:ems="10"
+                    android:hint="Your address"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100"
+                    android:textCursorDrawable="@null"
+                    android:typeface="normal" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/dealer_shipsp" />
+
+                <EditText
+                    android:id="@+id/etDealerShip"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/strokeButton"
+                    android:cursorVisible="false"
+                    android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/choose_a_dealer"
+                    android:inputType="textPersonName"
+                    android:textColor="@color/quantum_black_100" />
+
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/driving_license" />
+
+                <EditText
+                    android:id="@+id/etDrivingLicense"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dd_mm_yy" />
+
+                <TextView
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:text="@string/car_registration_date_st" />
+
+                <EditText
+                    android:id="@+id/etCarRegistration"
+                    android:layout_width="325dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_weight="1"
+                    android:cursorVisible="false"
+                    android:ems="10"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="@string/dd_mm_yy" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/finance_term_date_st" />
+
+                    <LinearLayout
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtFinanceStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/start_dd"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/etFinanceStart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:cursorVisible="false"
+                                android:ems="10"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/dd_mm_yy"
+                                android:inputType="date"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtFinanceStart"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtFinanceEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/end_dd"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/etFinanceEnd"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:cursorVisible="false"
+                                android:ems="10"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/dd_mm_yy"
+                                android:inputType="date"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtFinanceEnd"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="32dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:text="@string/insurance_term_date_st" />
+
+                    <LinearLayout
+                        android:layout_width="325dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtInsuranceStart"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/start_dd"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/etInsuranceStart"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:cursorVisible="false"
+                                android:ems="10"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/dd_mm_yy"
+                                android:inputType="date"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtInsuranceStart"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1">
+
+                            <TextView
+                                android:id="@+id/txtInsuranceEnd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="@string/end_dd"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <EditText
+                                android:id="@+id/etInsuranceEnd"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="8dp"
+                                android:layout_weight="1"
+                                android:cursorVisible="false"
+                                android:ems="10"
+                                android:focusable="false"
+                                android:focusableInTouchMode="false"
+                                android:hint="@string/dd_mm_yy"
+                                android:inputType="date"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toEndOf="@+id/txtInsuranceEnd"
+                                app:layout_constraintTop_toTopOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@color/signup_sep"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/signup_back2"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                <Button
+                    android:id="@+id/btnPrivacy"
+                    android:layout_width="325dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/buttonshape2"
+                    android:drawableRight="@drawable/ic_uncheck"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/data_protection"
+                    android:textColor="#98989e"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnLegal"
+
+                    android:layout_width="325dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:background="@drawable/buttonshape2"
+                    android:drawableRight="@drawable/ic_uncheck"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/legal"
+                    android:textColor="#98989e"
+                    android:textSize="12sp" />
+
+                <Button
+                    android:id="@+id/btnDisclaimer"
+
+                    android:layout_width="325dp"
+                    android:layout_height="48dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginBottom="24dp"
+                    android:background="@drawable/buttonshape2"
+                    android:drawableRight="@drawable/ic_uncheck"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:paddingTop="3dp"
+                    android:text="@string/disclaimer"
+                    android:textColor="#98989e"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/signup_sep"
+
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    />
+
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnSignUp"
+                android:stateListAnimator="@null"
+                android:text="@string/save"
+                android:textColor="@color/textButton"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:layout_width="200dp"
+                android:layout_height="45dp"
+                android:background="@drawable/buttonshape"
+
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

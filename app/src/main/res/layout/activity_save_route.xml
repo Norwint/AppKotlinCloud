@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.otcengineering.white_app.components.TitleBar
+        android:id="@+id/save_route_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titlebar_show_right1_button="true"
+        app:titlebar_title="@string/save_route" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/obligation"
+                        android:textSize="10dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/layout_border_filled_single"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingBottom="7dp"
+                        android:paddingTop="7dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.25"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/save_route_txtDuration"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="01:02 h."
+                                android:textColor="@color/secondaryText"
+                                android:textSize="14sp"
+                                tools:text="01:02 h." />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/layout_border" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.6"
+                            android:gravity="center"
+                            android:orientation="horizontal"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/save_route_txtDistance"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="1,000.5 km"
+                                android:textColor="@color/secondaryText"
+                                android:textSize="14sp"
+                                tools:text="1,000.5 km" />
+
+                            <TextView
+                                android:id="@+id/save_route_txtConsumption"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:text="100 l."
+                                android:textColor="@color/secondaryText"
+                                android:textSize="14sp"
+                                tools:text="100 l." />
+
+                            <TextView
+                                android:id="@+id/save_route_txtConsumptionAvg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 km./l."
+                                android:textColor="@color/secondaryText"
+                                android:textSize="14sp"
+                                tools:text="10 km./l." />
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/layout_border" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.15"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingTop="5dp">
+
+                            <TextView
+                                android:id="@+id/save_route_txtDrivingTechnique"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="4.4"
+                                android:textColor="@color/secondaryText"
+                                android:textSize="14sp"
+                                tools:text="4.4" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/title_of_route" />
+
+                    <EditText
+                        android:id="@+id/save_route_editTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/strokeButton"
+                        android:drawableRight="@drawable/ic_clear_black_24dp"
+                        android:hint="@string/example_route_title"
+                        android:inputType="textCapSentences"
+                        android:maxLines="1"
+                        android:textColor="@color/quantum_black_100"
+                        android:textCursorDrawable="@drawable/edit_cursor"
+                        android:typeface="normal" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/description" />
+
+                    <EditText
+                        android:id="@+id/save_route_editDescription"
+                        style="@style/Widget.AppCompat.EditText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@drawable/shape_share"
+                        android:gravity="top"
+                        android:inputType="textCapSentences|textMultiLine"
+                        android:lines="4"
+                        android:padding="10dp"
+                        android:textColor="@color/quantum_black_100"
+                        android:theme="@style/SwitchColor" />
+
+                    <TextView
+                        android:id="@+id/save_route_txtChars"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="@string/max_chars"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/layout_border" />
+
+                <LinearLayout
+                    android:id="@+id/save_route_layoutPoi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginBottom="64dp"
+                    android:background="@color/colorPrimary"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/save_route_btnNewPoint"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/button_rounded_height"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/button_rounded_white_trans"
+                        android:fontFamily="@font/montserratnew"
+                        android:text="@string/new_point"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/white_80_alpha"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/layout_border" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+
+                <Button
+                    android:id="@+id/save_route_btnNoSave"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/buttonshape_luis"
+                    android:fontFamily="@font/montserratnew"
+                    android:text="@string/do_not_save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlue"
+                    android:textSize="16sp" />
+
+                <Button
+                    android:id="@+id/save_route_btnSave"
+                    android:layout_width="100dp"
+                    android:layout_height="@dimen/button_height"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/buttonshape_luis"
+                    android:enabled="false"
+                    android:fontFamily="@font/montserratnew"
+                    android:text="@string/save"
+                    android:textAllCaps="false"
+                    android:textColor="@color/layout_border"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

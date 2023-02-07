@@ -1,0 +1,132 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/posts_layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_rounded_height"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/posts_btnGeneral"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_left_background"
+            android:fontFamily="@font/montserratnew"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/general_posts"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/posts_btnFriends"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_center_background"
+            android:fontFamily="@font/montserratnew"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/friends_posts"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/posts_btnInvitations"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="0.33"
+            android:background="@drawable/button_right_background"
+            android:fontFamily="@font/montserratnew"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/invitations"
+            android:textAllCaps="false"
+            android:textColor="@color/button_text_color"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/posts_separatorButtons"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/signup_sep" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/posts_recyclerPosts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/posts_layoutSendPost"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="0dp"
+            android:overScrollMode="never" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/posts_recyclerInvitations"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="12dp"
+            android:overScrollMode="never"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/posts_btnScrollUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_above="@+id/posts_layoutSendPost"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/circle_red_background"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_up_white" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/posts_layoutSendPost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white_80_alpha"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/layout_border" />
+
+            <Button
+                android:id="@+id/posts_btnSendPost"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape_luis"
+                android:fontFamily="@font/montserratnew"
+                android:text="@string/send_post"
+                android:textAllCaps="false"
+                android:textColor="@color/textButton"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

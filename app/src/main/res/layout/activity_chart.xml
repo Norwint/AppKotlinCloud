@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.otcengineering.white_app.components.TitleBar
+        android:id="@+id/chart_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titlebar_right1_button="@drawable/my_drive_icons_6"
+        app:titlebar_show_right1_button="true"
+        app:titlebar_title="@string/mileage" />
+
+    <com.otcengineering.white_app.components.CustomTabLayout
+        android:id="@+id/chart_customTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tab1text="@string/daily"
+        app:tab2text="@string/weekly"
+        app:tab3text="@string/monthly" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/chart_btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:rotation="180"
+            android:src="@drawable/ic_navigate_next_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/chart_txtTotalValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="--"
+                android:textAlignment="center"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                tools:text="120.3 km" />
+
+            <TextView
+                android:id="@+id/chart_txtDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textAlignment="center"
+                android:textColor="@color/signup_sep"
+                tools:text="Total: 30 Sep. - 6 Oct. 2017" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/chart_btnNext"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:padding="10dp"
+            android:src="@drawable/ic_navigate_next_black_24dp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <LinearLayout
+            android:id="@+id/chart_layoutDottedLines"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="50dp"
+            android:orientation="vertical" />
+
+        <com.otcengineering.white_app.components.SwipeLinearLayout
+            android:id="@+id/chart_layoutChart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/chart_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:overScrollMode="never"
+            tools:listItem="@layout/row_mileage" />
+
+        <FrameLayout
+            android:id="@+id/chart_btnScrollUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/circle_red_background"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_up_white" />
+        </FrameLayout>
+    </FrameLayout>
+
+</LinearLayout>

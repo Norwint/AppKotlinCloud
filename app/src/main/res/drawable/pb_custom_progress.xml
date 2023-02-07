@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--make it rounded-->
+    <corners
+        android:radius="20dp"
+        android:topLeftRadius="20dp"
+        android:topRightRadius="20dp" />
+
+    <gradient
+        android:angle="0"
+        android:endColor="#7E1144"
+        android:centerColor="#461753"
+        android:startColor="#041E66" />
+
+    <!--create invisible stroke for padding-->
+    <!-- l'stroke es per deixar margins resecpte el fons -->
+    <stroke
+        android:width="0dip"
+        android:color="@android:color/transparent"/>
+
+</shape>

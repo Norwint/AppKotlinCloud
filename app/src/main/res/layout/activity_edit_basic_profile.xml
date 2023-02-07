@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.EditBasicProfileActivity">
+
+    <ScrollView
+        android:id="@+id/profile_edit_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/imagPerfil"
+                android:layout_width="95dp"
+                android:layout_height="95dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/user_placeholder_correct"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnImgChange"
+                android:layout_width="100dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/buttonshape"
+                android:stateListAnimator="@null"
+                android:text="@string/add"
+                android:textAllCaps="true"
+                android:textColor="@color/colorPrimary"
+                android:textSize="14sp"
+                app:autoSizeMinTextSize="8dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imagPerfil" />
+
+            <EditText
+                android:id="@+id/etNickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/pseudonym"
+                android:inputType="textPersonName"
+                android:textColor="@color/quantum_black_100"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                app:layout_constraintHorizontal_bias="0.47"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/btnImgChange" />
+
+            <EditText
+                android:id="@+id/etEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/yourmail"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/quantum_black_100"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etNickName" />
+
+            <EditText
+                android:id="@+id/etSignupPass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="@string/chamin"
+                android:inputType="textPassword"
+                android:textColor="@color/quantum_black_100"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etPhoneNumber" />
+
+            <EditText
+                android:id="@+id/etRetype"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:fontFamily="sans-serif"
+                android:hint="@string/chamin"
+                android:inputType="textPassword"
+                android:textColor="@color/quantum_black_100"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etSignupPass" />
+
+            <EditText
+                android:id="@+id/etPhoneNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/strokeButton"
+                android:drawableRight="@drawable/ic_clear_black_24dp"
+                android:ems="10"
+                android:hint="@string/yourmobilephone"
+                android:inputType="phone"
+                android:maxLength="16"
+                android:textColor="@color/quantum_black_100"
+                android:textCursorDrawable="@null"
+                android:typeface="normal"
+                app:layout_constraintHorizontal_bias="0.518"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etEmailAddress" />
+
+            <Button
+                android:id="@+id/btnSave"
+                android:layout_width="200dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/buttonshape"
+                android:stateListAnimator="@null"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/etRetype" />
+
+            <TextView
+                android:id="@+id/txtUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/nickname_ast"
+                app:layout_constraintBottom_toTopOf="@+id/etNickName"
+                app:layout_constraintLeft_toLeftOf="@+id/etNickName" />
+
+            <TextView
+                android:id="@+id/txtMail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/email_ast"
+                app:layout_constraintBottom_toTopOf="@+id/etEmailAddress"
+                app:layout_constraintLeft_toLeftOf="@+id/etEmailAddress" />
+
+            <TextView
+                android:id="@+id/txtPass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/new_password"
+                app:layout_constraintBottom_toTopOf="@+id/etSignupPass"
+                app:layout_constraintLeft_toLeftOf="@+id/etSignupPass" />
+
+            <TextView
+                android:id="@+id/txtRetype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/retype_pass"
+                app:layout_constraintBottom_toTopOf="@+id/etRetype"
+                app:layout_constraintLeft_toLeftOf="@+id/etRetype" />
+
+            <TextView
+                android:id="@+id/txtPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:text="@string/mobile_phone_ast"
+                app:layout_constraintBottom_toTopOf="@+id/etPhoneNumber"
+                app:layout_constraintLeft_toLeftOf="@+id/etPhoneNumber" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/profile_edit_btnScrollUp"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/circle_red_background"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_up_white" />
+    </FrameLayout>
+</FrameLayout>

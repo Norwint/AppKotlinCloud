@@ -1,0 +1,621 @@
+<resources
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingTranslation">
+
+    <string name="offline">Silakan periksa koneksi internet Anda</string>
+
+    <!--Welcome strings-->
+    <string name="login">Login</string>
+    <string name="login_mayus">LOGIN</string>
+    <string name="sign_up">Daftar</string>
+    <string name="sign_up_mayus">DAFTAR</string>
+    <string name="search_device_connect_dongle">Temukan perangkat dan hubungkan dengan dongle</string>
+    <string name="error_default">Error</string>
+
+    <!--Login strings-->
+    <string name="obligation">Wajib Diisi *</string>
+    <string name="nicknamest">Nama panggilan *</string>
+    <string name="passwordst">Kata Sandi *</string>
+    <string name="error"><i>(Error)</i></string>
+    <string name="forgot"><u>Lupa Kata Sandi?</u></string>
+    <string name="pseudonym">Alias</string>
+    <string name="chamin">Minimal 10 karakter</string>
+    <string name="nickname">Nama panggilan</string>
+    <string name="invalid_userorpass">Username atau Kata Sandi salah</string>
+    <string name="user_blocked">Pengguna diblokir</string>
+    <string name="user_profile_required">Profil pengguna dibutuhkan</string>
+
+    <!--SendPassword strings-->
+    <string name="sendpass_mayus">KIRIM KATA SANDI</string>
+    <string name="sendpass">Kirim Kata Sandi</string>
+    <string name="email">Email</string>
+
+
+    <string name="verification_text">SMS berisi kode verifikasi\ntelah dikirimkan</string>
+
+    <!--SignUp strings-->
+    <string name="eadressst">E-mail *</string>
+    <string name="retype_passsp">Ulangi Password *</string>
+    <string name="retype_pass">Ulangi Password</string>
+    <string name="continu">Lanjutkan</string>
+    <string name="yourmail">emailanda@contoh.com</string>
+    <string name="yourmobilephone">Telepon Genggam Anda</string>
+    <string name="mobile_phonesp">Nomor Ponsel *</string>
+    <string name="mobile_phone">Nomor Ponsel</string>
+    <string name="emailsp">E-mail *</string>
+    <string name="loading">Memproses…</string>
+
+    <!--SignUp strings-->
+
+    <!--Dialog SendPassword-->
+
+    <!--Dialog SignUp-->
+    <string name="cancelar">Batalkan</string>
+
+    <!--SecondSignUp-->
+    <string name="vin_numbersp">VIN *</string>
+    <string name="vin_number">VIN</string>
+    <string name="car_modelsp">Model mobil *</string>
+    <string name="serial_numbersp">Nomor Seri *</string>
+    <string name="dealer_shipsp">Dealer *</string>
+    <string name="dealer_ship">Dealer</string>
+    <string name="autocall">Panggilan Otomatis ke Call Center</string>
+    <string name="car_owner">Pemilik Mobil</string>
+    <string name="countrysp">Negara *</string>
+    <string name="regionsp">Provinsi *</string>
+    <string name="locationsp">Lokasi *</string>
+    <string name="data_protection">  Klausul perlindungan informasi pribadi</string>
+    <string name="legal">Perjanjian Layanan</string>
+    <string name="disclaimer">  Disclaimer</string>
+    <string name="accept">Terima</string>
+    <string name="the_number_is">Nomor tertera di lembar teknis</string>
+    <string name="model_grade">Model dan grade mobil</string>
+    <string name="car_model">Model mobil</string>
+    <string name="choose_a_dealer">Pilih dealer terdekat</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="you_location">Lokasi Anda</string>
+    <string name="full_namesp">Nama Lengkap *</string>
+    <string name="full_name">Nama Lengkap</string>
+    <string name="sexsp">Jenis Kelamin *</string>
+    <string name="birth_datesp">Tanggal Lahir *</string>
+    <string name="birth_text">Tanggal Lahir </string>
+    <string name="country_text">Negara </string>
+    <string name="region_text">Provinsi </string>
+    <string name="dealer_ship_error">Dealer tidak ditemukan</string>
+    <string name="region_error">Provinsi tidak ditemukan</string>
+
+    <string name="plate">Plat</string>
+    <string name="plate_number">Nomor Plat</string>
+    <string name="search_dealership">Pencarian Dealer</string>
+
+    <!--Navigation tabs-->
+    <string name="title_my_drive">Pengemudian Saya</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_communications">Komunikasi</string>
+    <string name="title_my_routes">Rute Saya</string>
+    <string name="title_my_profile">Profil Saya</string>
+    <string name="title_settings">Pengaturan</string>
+    <string name="title_documents">Dokumen</string>
+
+    <!--My profile strings-->
+
+    <string name="serial_number">Nomor seri</string>
+    
+    <string name="edit">Ubah</string>
+    <string name="birthday">Tanggal Lahir</string>
+    <string name="sex">Jenis Kelamin</string>
+    <string name="country">Negara</string>
+    <string name="region1">Provinsi</string>
+    <string name="location1">Lokasi</string>
+    <string name="address">Alamat</string>
+    <string name="driving_license">Surat Izin Mengemudi</string>
+    <string name="new_password">Password Baru</string>
+    <string name="save">Simpan</string>
+    <string name="find_my_car">Temukan mobil saya</string>
+
+    <!--My Drive Settings-->
+    <string name="notifications_push">Notifikasi</string>
+    <string name="rewards">Penghargaan</string>
+
+    <!--Settings strings-->
+    <string name="privacy_profile">Kerahasiaan Profil</string>
+    <string name="rankings">Peringkat</string>
+    <string name="no_participate"><b>Tidak Berpartisipasi</b></string>
+    <string name="participate"><b>Partisipasi</b></string>
+    <string name="visible_all">Bisa terlihat oleh semua</string>
+    <string name="visible_friends">Bisa terlihat oleh teman</string>
+    <string name="no_visible">Disembunyikan</string>
+    <string name="friendship_invitation">Permintaan Pertemanan</string>
+    <string name="user_post">Kiriman Pengemudi</string>
+    <string name="connectech_post">Kiriman ConnecTech</string>
+    <string name="connectech_private_message">Pesan pribadi dari ConnecTech</string>
+    <string name="dealer_post">Kiriman Dealer</string>
+    <string name="dealer_private_message">Pesan Pribadi dari Dealer</string>
+
+    <!--Temas legales-->
+    <string name="privacy_info">Klausul perlindungan informasi pribadi</string>
+    <string name="connectech_ser">Perjanjian Layanan ConnecTech</string>
+
+    <!--Sin definir-->
+    <string name="add">TAMBAHKAN</string>
+    <string name="delete">Hapus</string>
+
+    <!--Valores de comprobación-->
+
+    <!--MileageApp, Eco.driving, Safety driving-->
+    <string name="mileage">Jarak Tempuh</string>
+    <string name="daily">Harian</string>
+    <string name="weekly">Mingguan</string>
+    <string name="monthly">Bulanan</string>
+    <string name="title_tips">Tips</string>
+    <string name="message">Pesan</string>
+
+    <!--MileageApp, Eco.driving, Safety driving-->
+    <string name="eco_driving">Eco-driving</string>
+    <string name="safety_driving">Safety-driving</string>
+    <string name="share">Bagikan</string>
+
+    <!-- Rankings -->
+    <string name="best_drive_ranking">Peringkat Best Drivers</string>
+    <string name="mileage_ranking">Peringkat Jarak Tempuh</string>
+    <string name="eco_driving_ranking">Peringkat Eco-driving</string>
+    <string name="safety_driving_ranking">Peringkat Safety driving</string>
+    <string name="local_ranking">Peringkat Lokal</string>
+    <string name="global_ranking">Peringkat Global</string>
+    <string name="go_to_my_position"><u>Peringkat Saya</u></string>
+    <string name="invite">Undang</string>
+    <string name="invited">Diundang</string>
+    <string name="profile_visible">Profil Publik</string>
+    <string name="profile_not_visible">Profil Disembunyikan</string>
+    <string name="profile_only_friends">Profil Hanya teman</string>
+    <string name="title_activity_share">Bagikan</string>
+
+    <!-- Location and security -->
+    <string name="location">Lokasi</string>
+
+    <string name="check">Cek</string>
+    <string name="call_to_call_center">Panggilan ke Call Center</string>
+
+    <!-- Communications -->
+    <string name="search">Pencarian</string>
+    <string name="posts">Kiriman</string>
+    <string name="dealer">Dealer</string>
+
+    <string name="all">Semua</string>
+    <string name="near_to_you">Terdekat</string>
+    <string name="friends">Teman</string>
+    <string name="general_posts">Kiriman Umum</string>
+    <string name="friends_posts">Kiriman Teman</string>
+    <string name="invitations">Permintaan Pertemanan</string>
+    <string name="message_to_me">Pesan untuk saya</string>
+
+    <!-- My routes-->
+    <string name="autosave">Rute Tersimpan</string>
+    <string name="planned">Rencana perjalanan</string>
+    <string name="done">Selesai</string>
+    <string name="favorites">Favorit</string>
+    <string name="new_route">Rute Baru</string>
+    <string name="select_all">Pilih Semua</string>
+    <string name="edit_route">Ubah Rute</string>
+    <string name="add_to_favorite">Tambahkan ke Favorit</string>
+    <string name="remove_from_favorite">Hapus dari Favorit</string>
+    <string name="share_route">Bagikan Rute Anda</string>
+    <string name="share_autosaved_route">Bagian Rute yang\nTersimpan Otomatis</string>
+    <string name="share_planned_route">Bagikan Rute yang\nDirencanakan</string>
+    <string name="share_done_route">Bagian Rute yang Ada</string>
+    <string name="delete_route">Hapus Rute</string>
+    <string name="gps_is_necessary">"Aktifkan GPS untuk menunjukkan lokasi Anda saat ini"</string>
+    <string name="cancel">Batalkan</string>
+    <string name="activate">Aktifkan</string>
+    <string name="autosaved_route">Simpan rute\nsecara otomatis</string>
+    <string name="planned_route">Rute yang\nDirencanakan</string>
+    <string name="done_route">Rute yang\nTelah Selesai</string>
+    <string name="start">Mulai</string>
+    <string name="information">Informasi</string>
+    <string name="current_location">Lokasi Saat Ini</string>
+    <string name="add_location">Tambahkan Lokasi</string>
+    <string name="calculate">Kalkulasi</string>
+    <string name="error_retrieving_info_from_google_maps">Gagal memuat info dari Google Maps</string>
+    <string name="error_retrieving_info_from_server">Gagal memuat info dari server</string>
+    <string name="please_select_locations">Silakan pilih lokasi</string>
+    <string name="title_of_route">Nama Rute *</string>
+    <string name="save_route">Simpan Rute</string>
+    <string name="description">Deskripsi</string>
+    <string name="max_chars">Maks. 140</string>
+    <string name="poi_type_hint">Pantai, Situs Kuno, Area Berbahaya…</string>
+    <string name="title_point_of_interest">Nama Lokasi Menarik *</string>
+    <string name="type_point_of_interest">Jenis Lokasi Menarik *</string>
+    <string name="add_picture">Tambahkan foto</string>
+    <string name="new_point">Titik baru</string>
+    <string name="add_point_of_interest">Tambahkan Lokasi Menarik</string>
+    <string name="type_of_poi">Jenis Lokasi Menarik</string>
+    <string name="finish_route">Selesaikan rute</string>
+    <string name="unfavorite">Hapus Favorit</string>
+    <string name="active_filter">Filter aktif</string>
+
+    <!--Filter-->
+
+    <string name="select_action">Pilih tindakan</string>
+    <string name="select_from_gallery">Pilih foto dari galeri</string>
+    <string name="capture_from_camera">Ambil foto dari kamera</string>
+    <string name="already_liked">Disukai</string>
+    <string name="send_report">Kirim Laporan</string>
+    <string name="send_report_correctly">Laporan Terkirim</string>
+    <string name="hide">Sembunyikan</string>
+    <string name="active_route">Rute Aktif</string>
+    <string name="password">Password</string>
+
+    <string name="friend">Teman</string>
+
+    <string name="status">Status</string>
+
+    <string name="send_post">Kirim Postingan</string>
+    <string name="post_type_text">Hanya Pesan</string>
+    <string name="post_type_image">Tambahkan foto</string>
+    <string name="post_type_video">Tambahkan video</string>
+    <string name="post_type_route">Tambahkan Rute</string>
+    <string name="write_here">Tulis di Sini</string>
+    <string name="add_video_link">Masukkan link Youtube</string>
+    <string name="add_route">Tambahkan Rute</string>
+    <string name="properly_posted">Terposting</string>
+
+    <string name="info">Info</string>
+    <string name="block_user">Blokir Pengguna</string>
+    <string name="unblock_user">Batalkan Blokir Pengguna</string>
+    <string name="message_obligation">Pesan*</string>
+    <string name="mileage_post_title">Postingan Jarak Tempuh</string>
+    <string name="eco_driving_post_title">Postingan Eco-driving</string>
+    <string name="safety_driving_post_title">Postingan Safety-driving</string>
+    <string name="select_route">Pilih Rute</string>
+
+    <string name="latitude_value">Garis lintang: %1$f</string>
+    <string name="longitude_value">Garis bujur: %1$f</string>
+    <string name="english">English</string>
+    <string name="bahasa_indonesia">Bahasa Indonesia</string>
+    <string name="unfriend">Hapus Teman</string>
+    <string name="manual">Manual</string>
+    <string name="download_pdf">Unduh PDF</string>
+    <string name="manual_new_version">Versi baru panduan manual \n sudah tersedia</string>
+    <string name="registration">Registrasi</string>
+    <string name="car_pictures">Gambar Mobil</string>
+    <string name="pictures">Gambar</string>
+    <string name="invited_correctly">Telah Diundang</string>
+    <string name="error_select_one_country"> First select one Country</string>
+
+    <string name="global_ranking_best_drive">Peringkat global \n untuk \'Best Drive\'</string>
+    <string name="local_ranking_best_drive">Peringkat lokal \n untuk \'Best Drive\'</string>
+    <string name="average">Rata-rata</string>
+    <string name="total">Total</string>
+
+    <string name="km_liters">km/liter</string>
+    <string name="badges">Lencana</string>
+    <string name="score">Skor</string>
+    <string name="driving_time">Durasi Mengemudi</string>
+
+    <string name="fuel">Bahan Bakar</string>
+
+    <string name="my_planned_routes">Rute-rute yang Saya Rencanakan</string>
+    <string name="my_done_routes">Rute-rute Saya yang Telah Selesai</string>
+    <string name="my_friend_planned">Rute yang Direncanakan Teman</string>
+    <string name="my_friends_done">Rute yang Diselesaikan Teman</string>
+    <string name="community_planed_routes">Rute yang Direncanakan Komunitas</string>
+    <string name="community_done_routes">Rute yang Diselesaikan Komunitas</string>
+    <string name="resend_sms">Kirim Ulang SMS</string>
+
+    <string name="share_connectech_community">Bagikan ke Komunitas ConnecTech</string>
+
+    <string name="share_connectech_friends">Bagikan ke Teman ConnecTech</string>
+    <string name="ok">OK</string>
+    <string name="global">Global</string>
+    <string name="local">Lokal</string>
+    <string name="last_connection">Koneksi Terakhir</string>
+
+    <string name="search_no_results">Maaf, pencarian tidak ditemukan</string>
+
+    <string name="language">Bahasa</string>
+
+    <string name="deleted_images">Gambar yang dihapus</string>
+    <string name="add_route_to_favorites_correctly">Tambahkan rute ke favorit dengan benar</string>
+    <string name="remove_route_to_favorites_correctly">Tambahkan rute ke favorit dengan benar</string>
+    <string name="change_phone">Ubah telepon</string>
+    <string name="title">Nama</string>
+    <string name="sms_key">Kunci SMS</string>
+    <string name="example_route_title">Contoh: Delhi ke Varanasi</string>
+
+    <string name="close">Dekat</string>
+
+    <string name="server_error">Kesalahan server</string>
+    <string name="loading_title">Memproses…</string>
+
+    <string name="malformed_data">Kesalahan pada Tanggal</string>
+    <string name="malformed_location">Kesalahan pada Lokasi</string>
+    <string name="malformed_name">Kesalahan pada Nama</string>
+    <string name="malformed_plate">Kesalahan pada Plat Nomor</string>
+    <string name="malformed_phone">Kesalahan pada Telepon</string>
+    <string name="require_input">Informasi wajib</string>
+    <string name="phone_error">Kesalahan pada Telepon</string>
+    <string name="username_error">Kesalahan pada Nama Pengguna</string>
+    <string name="secret_error">Kesalahan Rahasia</string>
+    <string name="secret_number_empty">Nomor rahasia kosong</string>
+    <string name="username_password_error">Kesalahan Username atau Password</string>
+    <string name="secret_number_incorrect">Nomor rahasia tidak benar</string>
+    <string name="nickname_error">Kesalahan pada Nickname</string>
+    <string name="password_error">Kesalahan Kata Sandi</string>
+    <string name="date_error">Kesalahan tanggal</string>
+    <string name="location_error">Kesalahan lokasi</string>
+    <string name="name_error">Kesalahan nama</string>
+    <string name="plate_error">Kesalahan plat nomor</string>
+    <string name="required_field_missing">Kolom yang diperlukan tidak ditemukan</string>
+    <string name="serial_number_error">Nomor seri error</string>
+    <string name="auth_dongle">Otentikasi dongle - authenticate () library no check true</string>
+    <string name="authentication">Otentikasi</string>
+    <string name="regis_dongle">Mendaftar dongle - registerDongle () no check true</string>
+    <string name="dongle_server_error">Mendaftarkan dongle - Kesalahan server</string>
+    <string name="enabling_user">Mengaktifkan pengguna</string>
+    <string name="error_enabling_user">Kesalahan saat mengaktifkan pengguna</string>
+    <string name="field">Kolom</string>
+    <string name="is_empty">kosong</string>
+    <string name="nickname_no_white">Nickname tidak boleh memiliki spasi</string>
+    <string name="not_valid_for_nickname">tidak berlaku untuk Nickname</string>
+    <string name="email_error">Kesalahan email</string>
+    <string name="email_not_correct">Email salah</string>
+    <string name="phone_lower_11">Telepon kurang dari 11 nomor</string>
+    <string name="error_retype">Terjadi kesalahan saat mengetik ulang Password</string>
+    <string name="techniques">teknik</string>
+    <string name="unable_locate_car">Tidak dapat menemukan mobil</string>
+    <string name="not_found">Tidak ditemukan</string>
+
+    <string name="NEW_FRIEND_REQUEST">Anda memiliki undangan pertemanan</string>
+    <string name="NEW_FRIEND_POST">Postingan terbaru dari Teman</string>
+    <string name="NEW_CONNECTECH_POST">Postingan terbaru dari ConnecTech</string>
+    <string name="NEW_CONNECTECH_MESSAGE">ConnecTech mengirimkan Anda pesan</string>
+    <string name="NEW_DEALER_POST">Postingan terbaru dari Dealer</string>
+    <string name="NEW_DEALER_MESSAGE">Dealer mengirimkan Anda pesan</string>
+    <string name="FRIEND_SHARING_LOCATION">Teman Anda mengirimkan lokasi</string>
+    <string name="uploading">Mengunggah…</string>
+    <string name="fetching_car_loc">Mengambil lokasi mobil…</string>
+    <string name="you">Kamu</string>
+    <string name="fota_title">Memperbarui dongle. Harap Menunggu…</string>
+    <string name="update">Pembaruan</string>
+    <string name="title_activity_badge">Lencana</string>
+    <string name="view_all">Lihat semua</string>
+    <string name="behavior">Perilaku berkendara</string>
+    <string name="title_activity_batges">Lencana</string>
+
+    <string name="correctly_working">Bekerja dengan baik</string>
+    <string name="odometer">Odometer</string>
+    <string name="hazards">Lampu Hazard</string>
+    <string name="no">Tidak</string>
+    <string name="On">On</string>
+    <string name="doors">Pintu</string>
+    <string name="low_beams">Lampu Dekat</string>
+    <string name="high_beams">Lampu Jauh</string>
+    <string name="engine">Mesin</string>
+    <string name="nickname_ast">Nama panggilan *</string>
+    <string name="email_ast">E-mail *</string>
+    <string name="mobile_phone_ast">Nomor Ponsel *</string>
+    <string name="register_dongle">Mendaftarkan dongle</string>
+    <string name="connecting_dongle">Menyambungkan ke dongle</string>
+    <string name="getting_dongle_state">Menunggu Status Dongle</string>
+    <string name="dongle_registered">Dongle telah terdaftar. Silahkan hubungi Call Center.</string>
+    <string name="reading_data">Membaca data</string>
+    <string name="no_connect_dongle">Gagal tersambung dengan dongle</string>
+    <string name="no_register_dongle">Tidak bisa mendaftarkan dongle. Silahkan hubungi Call Center</string>
+    <string name="step_x_y">Langkah %d dari %d</string>
+    <string name="update_dongle_">Apakah Anda ingin upgrade dongle ke versi %s?</string>
+    <string name="dongle_updated_ok">DONGLE BERHASIL TERUPDATE</string>
+    <string name="update_dongle_question">Upgrade dongle ke versi %s?</string>
+    <string name="won_badge">Selamat, Anda mendapatkan badge %s!</string>
+    <string name="no_location">Lokasi tidak ditemukan. Harap aktifkan lokasi untuk terhubung dengan dongle.</string>
+    <string name="bad_sn">Serial number salah</string>
+    <string name="opened">Terbuka</string>
+    <string name="closed">Tertutup</string>
+    <string name="title_notifications">Notifikasi</string>
+    <string name="door">Pintu</string>
+    <string name="update_dongle">Apakah Anda ingin upgrade dongle?</string>
+    <string name="retype_pass_error">Terjadi kesalahan saat mengetik ulang Password</string>
+    <string name="lower_than_11">Telepon kurang dari 11 nomor</string>
+    <string name="_error">Kesalahan</string>
+    <string name="FW_UPDATE_ASK">Memperbarui Dongle</string>
+    <string name="logout">Keluar</string>
+    <string name="storage">Penyimpanan</string>
+    <string name="mmc_post">Kiriman ConnecTech</string>
+    <string name="location_and_assistance">Lokasi &amp; Bantuan</string>
+    <string name="finance_term_date">Batas waktu keuangan</string>
+    <string name="car_registration">Pendaftaran mobil</string>
+    <string name="yes">Ya</string>
+    <string name="male">Laki-laki</string>
+    <string name="female">Perempuan</string>
+    <string name="starting_update">Mulai pembaruan…</string>
+    <string name="service_required">Diperlukan perawatan</string>
+    <string name="updating_profile">Memperbarui profil…</string>
+    <string name="restart_app">Mulai ulang aplikasi</string>
+    <string name="accepted">Diterima</string>
+    <string name="Food_And_Drinks">Makanan dan minuman</string>
+    <string name="Gas_Station">Pom bensin</string>
+    <string name="Post_Office">Kantor pos</string>
+    <string name="Parking_Lot">Tempat parkir</string>
+    <string name="Shopping">Perbelanjaan</string>
+    <string name="Hotels">Hotel</string>
+    <string name="no_share_post">Tidak dapat membagikan kiriman. Silakan coba lagi. Error:</string>
+    <string name="server_timeout">Server Timeout</string>
+    <string name="low">Kurang</string>
+    <string name="n_years">%d tahun</string>
+    <string name="n_months">%d bulan</string>
+    <string name="maintenance_timing">Waktu perawatan</string>
+    <string name="later">Kemudian</string>
+    <string name="new_badge">New badge</string>
+    <string name="mmc_privatge_message">Pesan pribadi dari ConnecTech</string>
+    <string name="Hospitals">Hospitals</string>
+    <string name="Bank">Bank</string>
+    <string name="_0">0</string>
+    <string name="dongle">Dongle</string>
+    <string name="score_n">Skor\n</string>
+    <string name="one_month">1 bulan</string>
+    <string name="one_year">1 tahun</string>
+    <string name="months_no_connect">3 bulan tanpa terhubung dengan dongle.</string>
+    <string name="new_phone_subtitle">Log out akan dilakukan secara otomatis di bawah ini. Jika ada keraguan, hubungi pusat panggilan</string>
+    <string name="abs_fault">KESALAHAN ABS</string>
+    <string name="airbag_fault">KESALAHAN SISTEM AIRBAG</string>
+    <string name="asc_fault">KESALAHAN SISTEM ASC</string>
+    <string name="FW_DELETING_IMAGE">Menghapus gambar dongle</string>
+    <string name="FW_ERROR">Gagal memperbarui dongle</string>
+    <string name="FW_RESTART_DONGLE">Memulai ulang dongle</string>
+    <string name="FW_SENDING_NEW_FW">Mengirim gambar dongle</string>
+    <string name="FW_UPDATED">Dongle telah diperbarui dengan sempurna</string>
+    <string name="Museum">Museum</string>
+    <string name="Others">Lain - lain</string>
+    <string name="Station">Stasiun</string>
+    <string name="Theather">Teater</string>
+    <string name="Undefined">Tidak jelas</string>
+    <string name="VEHICLE_STATUS_DOOR">Pintu</string>
+    <string name="VEHICLE_STATUS_ENGINE">Kendaraan ini</string>
+    <string name="account_in_other_device">Akun ini sudah ada di perangkat seluler yang lain.</string>
+    <string name="activation_4_digits">Nomor aktivasi harus terdiri dari 4 digit.</string>
+    <string name="app_restart">Aplikasi akan restart untuk menerapkan perubahan</string>
+    <string name="application_settings">Pengaturan aplikasi</string>
+    <string name="blood_type">Golongan darah</string>
+    <string name="blood_type_st">Golongan darah *</string>
+    <string name="call_call_center">Apakah Anda ingin menghubungi Call Center?</string>
+    <string name="call_to_dealer">Telepon ke dealer</string>
+    <string name="car_registration_date_st">Tanggal pendaftaran mobil *</string>
+    <string name="change_language">Mengubah bahasa…</string>
+    <string name="connect_dongle">silakan lakukan koneksi dengan dongle</string>
+    <string name="connection_contact_call_center">Ada masalah koneksi dengan dongle. Silakan hubungi Call Center.</string>
+    <string name="contact_call_center">Silakan hubungi Call Center.</string>
+    <string name="current_address">Alamat saat ini</string>
+    <string name="dashboard_image">Gambar dasbor</string>
+    <string name="days_0">14 hari telah berakhir dan semua informasi pengguna telah dihapus.</string>
+    <string name="days_n">Hubungkanan dengan dongle di %s hari berikutnya atau informasi dari aplikasi akan dihapus.</string>
+    <string name="dealer_info_and_maintenance">Info dealer &amp; Pemeliharaan</string>
+    <string name="dismiss_route">Apakah Anda ingin mengabaikan rute ini?</string>
+    <string name="do_not_save">Jangan Simpan</string>
+    <string name="dongle_connection_error">Sambungan dongle gagal</string>
+    <string name="dongle_updated_nok">GAGAL MEMPERBARUI DONGLE</string>
+    <string name="download_route">Mengunduh rute</string>
+    <string name="drive_monthly_total">Perjalanan (Per bulan  /  Total)</string>
+    <string name="driving">Riwayat Mengemudi</string>
+    <string name="driving_license_date_st">Tanggal SIM (Surat Izin Mengemudi) *</string>
+    <string name="end_dd">Akhir:</string>
+    <string name="error_password">harus terdiri dari minimal satu huruf dan satu angka, dan lebih dari 10 digit</string>
+    <string name="error_try_again">Gagal. Silakan, coba lagi.</string>
+    <string name="extension_not_good">Ekstensi %s tidak didukung.</string>
+    <string name="fault_car">Kesalahan mobil</string>
+    <string name="finance">Finansial</string>
+    <string name="finance_and_insurance">Keuangan &amp; Asuransi</string>
+    <string name="finance_term_date_st">Batas waktu keuangan *</string>
+    <string name="fuel_consumption">Konsumsi bahan bakar</string>
+    <string name="fuel_level">Tingkat bahan bakar</string>
+    <string name="geo_alarm_n">Alarm Geofencing: %d km persegi</string>
+    <string name="geo_alarm_off">Alarm Geofencing: 0 km tidak aktif</string>
+    <string name="high">Tinggi</string>
+    <string name="in_route">Dalam rute</string>
+    <string name="insurance_term_date">Tanggal berlaku asuransi</string>
+    <string name="insurance_term_date_st">Tanggal berlaku asuransi</string>
+    <string name="language_changed">Bahasa dirubah</string>
+    <string name="loading_picture">Menampilkan gambar…</string>
+    <string name="loan_status">Status pinjaman</string>
+    <string name="long_message">Pesan lebih panjang dari 140 karakter. Silakan persingkat pesan Anda dan coba lagi.</string>
+    <string name="maturity">Jatuh tempo:</string>
+    <string name="maturity_n">Jatuh tempo: %s</string>
+    <string name="new_app_update">Ada versi baru dari aplikasi. Apakah Anda ingin memperbaruinya?</string>
+    <string name="new_phone_txt">Telah terdeteksi bahwa pengguna telah terhubung ke akun %s</string>
+    <string name="no_maintenance_timing">Tidak ada waktu perawatan</string>
+    <string name="no_milles">Odometer dalam mil tidak didukung oleh aplikasi.</string>
+    <string name="no_upload_img">Tidak dapat mengunggah gambar.</string>
+    <string name="not_available">Tidak tersedia</string>
+    <string name="open">Buka</string>
+    <string name="others">Lain - lain</string>
+    <string name="phone_invalid_format">Telepon tidak diformat dengan benar. Silakan, masukan nomor telepon Anda dengan memakai kode negara + nomor.</string>
+    <string name="phone_updated_good">Telepon telah diperbarui dengan sempurna</string>
+    <string name="position_lights">Lampu posisi</string>
+    <string name="restarting_dongle">Memulai ulang dongle…</string>
+    <string name="save_pois">Menyimpan POI…</string>
+    <string name="save_recent_trip_on_this_device">Simpan perjalanan terbaru di perangkat ini</string>
+    <string name="saving_route">Menyimpan rute…</string>
+    <string name="search_dongle">Mencari dongle</string>
+    <string name="search_updates">Mencari pembaruan</string>
+    <string name="send_pass">Kami telah mengirimkan kata sandi ke email Anda</string>
+    <string name="start_dd">Mulai:</string>
+    <string name="thank_for_driving">Terima kasih Sudah mengemudi dengan saya!</string>
+    <string name="the_indicator_is_on">Indikator %s menyala pada %s</string>
+    <string name="third_party_licences">Lisensi pihak ketiga</string>
+    <string name="total_mileage">Total jarak tempuh</string>
+    <string name="transmission_fault">KESALAHAN TRANSMISI</string>
+    <string name="unsaved_route">Rute yang belum tersimpan</string>
+    <string name="update_the_firmware_of_the_dongle_automatically">Perbarui firmware dongle secara otomatis</string>
+    <string name="vehicle_condition">Kondisi kendaraan</string>
+    <string name="you_app_is_updated">Aplikasi anda adalah versi yang paling baru</string>
+    <string name="you_call_dealer">Apakah Anda ingin menghubungi dealer?</string>
+    <string name="you_have_active_route">Anda memiliki rute yang sedang aktif. Apakah Anda ingin membatalkan rute yang sebelumnya dan memulai rute ini?</string>
+    <string name="you_have_new_message">Anda memiliki pesan baru dari ConnecTech</string>
+    <string name="you_vehicle_is_out">Kendaraan Anda berada di luar dari Geofencing Area di %s</string>
+    <string name="your_post">Kiriman Anda</string>
+    <string name="your_posts">"Kiriman Anda:\nPer Bulan / Total"</string>
+    <string name="zero_m_zero_y">0 bulan / 0 tahun</string>
+    <string name="you_want_exit">Apakah Anda yakin ingin keluar dari aplikasi?</string>
+    <string name="you_send_post">Apakah Anda yakin ingin mengirim posting ini?</string>
+    <string name="you_want_change">Jika Anda ingin mengubah perangkat, informasi pada perangkat sebelumnya akan terhapus.</string>
+    <string name="yt_bad_url">URL YouTube yang tidak benar. Silakan, ketik tautan YouTube yang benar.</string>
+    <string name="brake_fault">KESALAHAN REM</string>
+    <string name="charging_fault">KESALAHAN SISTEM PENGISIAN</string>
+    <string name="electrical_fault">KESALAHAN SISTEM KELISTRIKAN</string>
+    <string name="engine_fault">KESALAHAN MESIN</string>
+    <string name="immobilizer_fault">KESALAHAN SISTEM INMOBILIZER</string>
+    <string name="keyless_fault">KESALAHAN PENGOPERASIAN KEYLESS</string>
+    <string name="low_brake_fluid">CAIRAN REM KURANG</string>
+    <string name="oil_pressure">TEKANAN OLI</string>
+    <string name="steering_fault">KESALAHAN PADA SISTEM ELEKTRIK POWER STEERING</string>
+    <string name="steering_lock">KUNCI KEMUDI</string>
+    <string name="thank_you_for_driving">Terima kasih sudah berkemudi</string>
+    <string name="thank_for_driving_notif">Saat ini, Anda telah melakukan perjalanan sejauh %s km. Waktu mengemudi adalah %sh %sm.</string>
+    <string name="thank_for_driving_desc">Anda telah mengemudi sejauh %s km dalam waktu %s jam %s menit selama mesin menyala. Semoga pengalaman mengemudi anda menyenangkan. Silakan hubungi dealer Anda jika terdapat masalah.</string>
+    <string name="gps_not_found">Sinyal GPS tidak ditemukan. Silakan, coba lagi atau periksa apakah pengaturan lokasi sudah diaktifkan di telepon.</string>
+    <string name="unactivated_email">Alamat email tidak aktif: %s</string>
+    <string name="user_email_not_validated">Email pengguna tidak tervalidasi</string>
+    <string name="times">kali</string>
+    <string name="my_routes">Rute saya</string>
+    <string name="my_profile">Profil saya</string>
+    <string name="notification_history">Notifikasi</string>
+    <string name="decline">Hapus</string>
+    <string name="accept_friend">Terima</string>
+    <string name="periodic_maintenance_now">Sekarang adalah waktu untuk melakukan perawatan berkala</string>
+    <string name="its_time_for_maintenance">Waktu untuk perawatan berkala telah tiba. Kami rekomendasikan anda untuk mengunjungi dan menghubungi dealer resmi CONNECTECH.</string>
+    <string name="your_vehicle_is_outside_geofencing">Kendaraan Anda berada di luar dari Geofencing Area di %s</string>
+    <string name="post">Kiriman</string>
+    <string name="x_x_at_x">%s %s pada %s</string>
+    <string name="open_settings">Buka pengaturan</string>
+    <string name="location_permission_not_accepted">Perizinan untuk lokasi tidak diterima. Harap aktifkan lokasi untuk terhubung dengan peta.</string>
+    <string name="nickname_bigger_than_4_chars">Nama panggilan harus lebih dari 4 karakter.</string>
+    <string name="the_car_should_be_stopped">Kendaraan harus dihentikan dengan kondisi kunci kontak ON.</string>
+    <string name="please_keep_car_stopped">Harap tetap hentikan kendaraan dengan kondisi kunci kontak ON.</string>
+    <string name="cannot_get_location">Tidak dapat menentukan lokasi. Silahkan coba lagi nanti.</string>
+    <string name="no_location_enable_map">Lokasi tidak ditemukan. Harap aktifkan lokasi untuk terhubung dengan peta.</string>
+    <string name="near">Dekat</string>
+    <string name="change_password">Merubah Kata Sandi</string>
+    <string name="pass_temp_one_hour">Kata sandi berlaku selama 1 jam.</string>
+    <string name="email_exists_sign_up">e-mail ini sudah terdaftar.\nMasuk untuk menuntaskan pengaturan.</string>
+    <string name="reentry_mail">Masukkan kembali e-mail Anda</string>
+    <string name="extend_it">Di perpanjang</string>
+    <string name="your_vehicle_outside_notif">Kendaraan Anda berada di luar dari Geofencing Area</string>
+    <string name="blocked">Diblokir</string>
+    <string name="your_car_age">Usia mobil Anda</string>
+    <string name="payment">Pembayaran</string>
+    <string name="keyless">Tanpa kunci</string>
+    <string name="title_activity_orders">Pesananku</string>
+    <string name="poll">Polling</string>
+    <string name="last_register">Pendaftaran terakhir</string>
+    <string name="my_orders">Pesananku</string>
+    <string name="initial_date">Tanggal Awal</string>
+    <string name="survey_not_responeded">Survei tidak ditanggapi</string>
+    <string name="previous">Sebelumnya</string>
+    <string name="next">Lanjut</string>
+    <string name="invoice">Faktur</string>
+    <string name="total_price">Total harga:</string>
+    <string name="apply_filter">Terapkan Filter</string>
+    <string name="generate_invoice">Hasilkan Faktur</string>
+    <string name="the_search_cannot_find_any_item_nwith_this_name">Pencarian tidak dapat menemukan item dengan nama ini.</string>
+    <string name="user_all_surveys_done_title">Semua survei selesai!</string>
+    <string name="user_all_surveys_done_desc">Terima kasih telah menjawab semua survei!</string>
+</resources>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <com.otcengineering.white_app.components.TitleBar
+            android:id="@+id/profile_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titlebar_show_right1_button="true"
+            app:titlebar_title="@string/title_my_profile" />
+
+        <com.otcengineering.white_app.components.CustomTabLayout
+            android:id="@+id/profile_customTabLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:tab1text="@string/info"
+            app:tab2text="@string/posts"
+            app:tab3text="@string/friends" />
+
+        <FrameLayout
+            android:id="@+id/profile_layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="16dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/profile_layoutMenuUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/profile_viewEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryTrans" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/profile_btnBlockOrUnblock"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:gravity="center"
+                android:text="@string/block_user"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:background="@color/signup_sep" />
+
+            <TextView
+                android:id="@+id/profile_btnCancel"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/button_height"
+                android:gravity="center"
+                android:text="@string/cancel"
+                android:textColor="@color/quantum_black_100"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/profile_contentMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</FrameLayout>

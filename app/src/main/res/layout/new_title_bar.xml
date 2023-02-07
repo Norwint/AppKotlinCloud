@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/colorWhite">
+
+    <FrameLayout
+        android:id="@+id/titlebar_btnLeft"
+        android:layout_width="65dp"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:id="@+id/titlebar_notifiation"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top|end"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/circle_red_background"
+            android:backgroundTint="@color/colorPrimary"
+            android:translationZ="1dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/titlebar_notifiationCount"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="1"
+                android:textAlignment="center"
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:id="@+id/titlebar_imgLeft"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/arrow_back"
+            app:srcCompat="@drawable/my_drive_icons_1" />
+
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/titlebar_txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/best_drive_ranking"
+        android:textColor="@color/quantum_black_100"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <FrameLayout
+        android:id="@+id/titlebar_btnRight2"
+        android:layout_width="@dimen/title_bar_button_size"
+        android:layout_height="56dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/titlebar_btnRight1"
+        app:layout_constraintStart_toEndOf="@+id/titlebar_txtTitle"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/titlebar_imgRight2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/my_drive_icons_6" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/titlebar_btnRight1"
+        android:layout_width="@dimen/title_bar_button_size"
+        android:layout_height="56dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/titlebar_imgRight1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/my_drive_icons_16" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/titlebar_viewShadow"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/tab_shadow"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

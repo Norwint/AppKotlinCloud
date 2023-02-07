@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/row_poi_save_route_btnDelete"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_rounded_height"
+                android:layout_gravity="right"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/buttonshape_luis"
+                android:fontFamily="@font/montserratnew"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/delete"
+                android:textAllCaps="true"
+                android:textColor="@color/error"
+                android:textSize="14sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_point_of_interest" />
+
+        <EditText
+            android:id="@+id/row_poi_save_route_editPoiTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/strokeButton"
+            android:drawableRight="@drawable/ic_clear_black_24dp"
+            android:hint="@string/title"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:textColor="@color/quantum_black_100"
+            android:textCursorDrawable="@drawable/edit_cursor"
+            android:typeface="normal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/type_point_of_interest" />
+
+        <TextView
+            android:id="@+id/row_poi_save_route_txtPoiType"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_height"
+            android:backgroundTint="@color/strokeButton"
+            android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+            android:gravity="center_vertical"
+            android:hint="@string/poi_type_hint"
+            android:inputType="textCapSentences"
+            android:maxLines="1"
+            android:paddingLeft="5dp"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="17sp"
+            android:typeface="normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/strokeButton" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/add_picture" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="90dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/row_poi_save_route_recyclerImages"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:nestedScrollingEnabled="false"
+                    android:overScrollMode="never" />
+
+                <ImageView
+                    android:id="@+id/row_poi_save_route_btnAddImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="16dp"
+                    android:paddingRight="20dp"
+                    android:src="@drawable/add_poi_image" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/layout_border" />
+
+</LinearLayout>

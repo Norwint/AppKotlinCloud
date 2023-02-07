@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    tools:context=".fragments.DashboardAndStatus">
+
+
+    <com.otcengineering.white_app.components.CustomTabLayout
+        android:id="@+id/dash_customTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tab1text="@string/title_dashboard"
+        app:tab2text="@string/status"
+        app:tabs="2" />
+
+    <FrameLayout
+        android:id="@+id/dash_layoutContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp" />
+</LinearLayout>

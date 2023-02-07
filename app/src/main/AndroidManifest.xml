@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.otcengineering.white_app">
+
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_CONNECT" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- NETWORK -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- BLUETOOTH -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" /> <!-- Android 6.0 BLE SCAN -->
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> <!-- Galeria de fotos  + Camèra -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- PHONE STATE -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" /> <!-- Location -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.PERMISSION_BIND_ACCESSIBILITY_SERVICE" /> <!-- Push Notifications -->
+    <uses-permission android:name="android.permission.CALL_PHONE" /> <!-- Android P -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name=".MyApp"
+        android:icon="@drawable/icon_android"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@drawable/icon_android"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="LockedOrientationActivity">
+        <!-- App -->
+        <activity
+            android:name=".keyless.activity.SharedKeysActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".keyless.activity.VehicleSchedulerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.QRActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.ShippingSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.ShoppingSummaryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.ReviewPaymentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChangePasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.LicenseActivity" />
+        <activity
+            android:name=".activities.DrivingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ConditionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="otc"
+                    android:host="connectech" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.DongleActivity"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.SendPassActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.LoadingSignUpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SecondSignUpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.ListViewSignUpActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.Home2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem.NoActionBar" />
+        <activity
+            android:name=".activities.LegalActivity"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.EditBasicProfileActivity"
+            android:parentActivityName=".activities.Home2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.EditPrimordialActivity"
+            android:parentActivityName=".activities.Home2Activity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.PrivacyProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.NotificationsPushActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.DealerShipActivity"
+            android:parentActivityName=".activities.SecondSignUpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.SignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activities.TipsActivity"
+            android:label="@string/title_tips"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.ChartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem.NoActionBar" />
+        <activity
+            android:name=".activities.RankingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem.NoActionBar" />
+        <activity
+            android:name=".activities.NewRouteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activities.RouteDetailsActivity"
+            android:label="@string/title_activity_share"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.SaveRouteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activities.NewPoiActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.PoiTypeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.FiltersFavouritesActivity"
+            android:label="@string/title_activity_filters_favourites"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.InviteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.SendPostActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".activities.RouteSelectionActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.LanguageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.PictureActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.PdfActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activities.BadgesActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activities.BadgeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.ChangePhone" />
+        <activity
+            android:name=".activities.ConditionDescriptionActivity"
+            android:label="Vehicle Condition Description"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.NotificationActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/icon" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider> <!-- android:theme="@android:style/Theme.Translucent.NoTitleBar" -->
+        <service
+            android:name=".utils.pushnotifications.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.SendFileService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.otcengineering.apible.blecontrol.service.FileTransfer"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.otcengineering.apible.blecontrol.service.SimpleMainService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.otcengineering.apible.blecontrol.service.UpdateCarService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name="com.otcengineering.apible.blecontrol.service.HeartBeatService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service
+            android:name=".service.ConnectDongleService"
+            android:exported="false"
+            android:stopWithTask="true" />
+        <service android:name=".service.PassiveBluetoothService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.braintreepayments.api.BraintreeBrowserSwitchActivity"
+            android:launchMode="singleTask"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="com.otcengineering.whiteapp.braintree" />
+            </intent-filter>
+        </activity>
+        <receiver android:name="com.instacart.library.truetime.BootCompletedBroadcastReceiver" android:exported="false" />
+        <activity
+            android:name=".activities.ItemDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".keyless.activity.VehicleSchedulerManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.CartActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.PaymentSelectorActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".payment.activity.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".keyless.activity.NFCActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".activities.SurveyActivity" android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar"  />
+        <activity android:name=".views.activity.WelcomeActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.activity.VerificationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".views.activity.HomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NewThem.NoActionBar"
+            />
+        <activity android:name=".views.activity.VehicleSettingsActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+    </application>
+
+</manifest>

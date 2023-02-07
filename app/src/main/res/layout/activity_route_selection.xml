@@ -1,0 +1,28 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <com.otcengineering.white_app.components.TitleBar
+        android:id="@+id/route_selection_titleBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:titlebar_title="@string/select_route" />
+
+    <com.otcengineering.white_app.components.CustomTabLayout
+        android:id="@+id/route_selection_customTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tab1text="@string/planned"
+        app:tab2text="@string/done" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/route_selection_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:overScrollMode="never" />
+</LinearLayout>
+

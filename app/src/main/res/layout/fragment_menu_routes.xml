@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/menu_routes_viewEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimaryTrans" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/menu_routes_btnSave"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/save_route"
+            android:textColor="@color/quantum_black_100"
+            android:visibility="gone"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/menu_routes_btnSaveSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:visibility="gone"
+            android:background="@color/signup_sep" />
+
+
+        <TextView
+            android:id="@+id/menu_routes_btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/edit_route"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/menu_routes_btnEditSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/signup_sep" />
+
+        <TextView
+            android:id="@+id/menu_routes_btnAddRemoveFavorites"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/add_to_favorite"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/menu_routes_btnAddRemoveFavoritesSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/signup_sep" />
+
+        <TextView
+            android:id="@+id/menu_routes_btnShare"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/share_route"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/menu_routes_btnShareSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/signup_sep" />
+
+        <TextView
+            android:id="@+id/menu_routes_btnDelete"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/delete_route"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:background="@color/signup_sep" />
+
+        <TextView
+            android:id="@+id/menu_routes_btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:gravity="center"
+            android:text="@string/cancel"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

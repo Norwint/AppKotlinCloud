@@ -1,0 +1,26 @@
+<resources>
+
+    <declare-styleable name="CustomTabLayout">
+        <attr name="tab1text" format="string" />
+        <attr name="tab2text" format="string" />
+        <attr name="tab3text" format="string" />
+        <attr name="tab4text" format="string" />
+        <attr name="tabs" format="integer" />
+        <attr name="showTabIndicator" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBar">
+        <attr name="titlebar_title" format="string" localization="suggested" />
+        <attr name="titlebar_show_left_button" format="boolean" />
+        <attr name="titlebar_show_right1_button" format="boolean" />
+        <attr name="titlebar_show_right2_button" format="boolean" />
+        <attr name="titlebar_left_button" format="reference" />
+        <attr name="titlebar_right1_button" format="reference" />
+        <attr name="titlebar_right2_button" format="reference" />
+        <attr name="titlebar_show_shadow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundedCornersImageView">
+        
+    </declare-styleable>
+</resources>

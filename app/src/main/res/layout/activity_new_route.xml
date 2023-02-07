@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <com.otcengineering.white_app.components.TitleBar
+            android:id="@+id/new_route_titleBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titlebar_show_right1_button="true"
+            app:titlebar_title="@string/new_route" />
+
+        <Button
+            android:id="@+id/new_route_btnHide"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/button_rounded_height"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/buttonshape_luis"
+            android:fontFamily="@font/montserratnew"
+            android:text="@string/hide"
+            android:textAllCaps="false"
+            android:textColor="@color/quantum_black_100"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/new_route_layoutLocations"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:paddingTop="5dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/current_location" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgTwoDotsMiddle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/two_dots_red"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgDestinationMiddle1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/destination"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgTwoDotsMiddle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:src="@drawable/two_dots_red"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgDestinationMiddle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:src="@drawable/destination"
+                    android:tint="@color/colorPrimary"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgTwoDots"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/two_dots_red" />
+
+                <ImageView
+                    android:id="@+id/new_route_imgDestination"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:tint="@color/colorPrimary"
+                    android:src="@drawable/destination" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/new_route_editStart"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:backgroundTint="@color/strokeButton"
+                    android:focusable="false"
+                    android:hint="@string/current_location"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#afafb4"
+                    android:textCursorDrawable="@null"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/new_route_editLocationMiddle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:backgroundTint="@color/strokeButton"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#afafb4"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/new_route_editLocationMiddle2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:backgroundTint="@color/strokeButton"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#afafb4"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/new_route_editEnd"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/edit_height"
+                    android:backgroundTint="@color/strokeButton"
+                    android:focusable="false"
+                    android:inputType="text"
+                    android:textColor="@color/colorPrimary"
+                    android:textColorHint="#afafb4"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/new_route_btnAddLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/add_location"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/new_route_btnCalculate"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="end"
+                android:background="@drawable/button_rounded_red"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/calculate"
+                android:textColor="@color/colorWhite"
+                android:textSize="16sp" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/layout_border" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.google.android.gms.maps.MapView
+            android:id="@+id/new_route_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/new_route_layoutRouteInfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/layout_border_filled_single"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.20"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/new_route_txtDuration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="01:02 h."
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        tools:text="01:02 h." />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/layout_border" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.7"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/new_route_txtDistance"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1,000.5 km"
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        tools:text="1,000.5 km" />
+
+                    <TextView
+                        android:id="@+id/new_route_txtConsumption"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginRight="5dp"
+                        android:text="100 l."
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        tools:text="100 l." />
+
+                    <TextView
+                        android:id="@+id/new_route_txtConsumptionAvg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="10 km./l."
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        tools:text="10 km./l." />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/layout_border" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.1"
+                    android:gravity="center"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp">
+
+                    <TextView
+                        android:id="@+id/new_route_txtDrivingTechnique"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="4.4"
+                        android:textColor="@color/secondaryText"
+                        android:textSize="16sp"
+                        tools:text="4.4" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <FrameLayout
+                android:id="@+id/new_route_btnLocation"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/button_squared_rounded_corners">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/my_location" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/layout_border" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/new_route_layoutFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/new_route_btnFinish"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape_luis"
+                android:fontFamily="@font/montserratnew"
+                android:text="@string/finish_route"
+                android:textAllCaps="false"
+                android:textColor="@color/textButton"
+                android:textSize="16sp" />
+
+            <FrameLayout
+                android:id="@+id/new_route_btnNewPoi"
+                android:layout_width="@dimen/button_height"
+                android:layout_height="@dimen/button_height"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/circle_red_background">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/marker_poi"
+                    android:tint="@color/colorWhite" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/new_route_layoutStartSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/new_route_btnStart"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape_luis"
+                android:enabled="false"
+                android:fontFamily="@font/montserratnew"
+                android:text="@string/start"
+                android:textAllCaps="false"
+                android:textColor="@color/layout_border"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/new_route_btnSave"
+                android:layout_width="150dp"
+                android:layout_height="@dimen/button_height"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/buttonshape_luis"
+                android:enabled="false"
+                android:fontFamily="@font/montserratnew"
+                android:text="@string/save"
+                android:textAllCaps="false"
+                android:textColor="@color/layout_border"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

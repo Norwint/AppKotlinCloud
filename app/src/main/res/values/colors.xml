@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1373BA</color>
+    <color name="colorPrimaryDark">#1563A9</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorWhite">#FEFEFE</color>
+    <color name="colorWhiteTrans">#6affffff</color>
+    <color name="colorBlue">#001E67</color>
+    <color name="colorBlueTrans">#92001e67</color>
+    <color name="forgotPass">#a9a9c3</color>
+    <color name="textButton">#d7233c</color>
+    <color name="strokeButton">#9898b7</color>
+    <color name="error">#cf021b</color>
+    <color name="signup_sep">#cecede</color>
+    <color name="signup_back1">#f6f9fa</color>
+    <color name="signup_back2">#e6eff5</color>
+    <color name="colorTexto">#737373</color>
+    <color name="marcadorMileage">#CB092F</color>
+    <color name="tab_selected">#FFFFFF</color>
+    <color name="tab_unselected">#F7FAFC</color>
+    <color name="tab_text_selected">#0C0C0C</color>
+    <color name="tab_text_unselected">#BBABC5</color>
+    <color name="line_dotted">#9999B8</color>
+    <color name="colorPrimaryTrans">#CC1373BA</color>
+    <color name="layout_border">#cfcfde</color>
+    <color name="secondaryText">#6c6e9c</color>
+    <color name="gray">#AAAAAA</color>
+    <color name="gray_disabled">#D2D2D2</color>
+    <color name="colorGrayBadge">#EDEDED</color>
+    <color name="black">#FF000000</color>
+    <color name="dialog_transparent">#CC2D2D2D</color>
+    <color name="dialog_transparents">#00FFFFFF</color>
+    <color name="custom_dialog_light_blue">#CC1373BA</color>
+    <color name="custom_dialog_primary">#CC2D2E2E</color>
+
+    <!--<color name="tab_shadow_start">#D3D6DF</color>-->
+    <!--<color name="tab_shadow_middle">#DADDE5</color>-->
+    <!--<color name="tab_shadow_end">#F4F5F8</color>-->
+    <color name="tab_shadow_start">#DADDE5</color>
+    <color name="tab_shadow_end">#0CDADDE5</color>
+
+    <color name="chart_bar_blue_start">#2D2E2E</color>
+    <color name="chart_bar_blue_center">#292a2a</color>
+    <color name="chart_bar_blue_end">#262626</color>
+
+    <color name="chart_bar_red_start">#F34F5E</color>
+    <color name="chart_bar_red_center">#CC2D3F</color>
+    <color name="chart_bar_red_end">#A2071E</color>
+
+    <color name="chart_row_color">#F0F0F0</color>
+
+    <color name="check_button">#4E9BD3</color>
+    <color name="check_button_error">#c15a67</color>
+    
+    <color name="my_profile_even">#E8E8E6</color>
+    <color name="my_profile_odd">#EFEFEF</color>
+
+    <color name="white_60_alpha">#99FFFFFF</color>
+    <color name="white_80_alpha">#CCFFFFFF</color>
+
+    <color name="black_05_alpha">#0c000000</color>
+    <color name="black_20_alpha">#33000000</color>
+    <color name="black_30_alpha">#4D000000</color>
+    <color name="black_60_alpha">#99000000</color>
+    <color name="colorGrayDark">#2D2E2E</color>
+</resources>

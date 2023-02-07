@@ -1,0 +1,1062 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/wallet_btnEdit"
+        android:layout_width="100dp"
+        android:layout_height="@dimen/button_rounded_height"
+        android:layout_gravity="right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/buttonshape_luis"
+        android:fontFamily="@font/montserratnew"
+        android:text="@string/edit"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimary"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <ScrollView
+            android:id="@+id/wallet_scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:overScrollMode="never">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/car_pictures"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_driving_license_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/car_otc" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_driving_license_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_driving_license_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:background="@drawable/mark_car">
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_driving_license_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_driving_license_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_driving_license_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_driving_license_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_driving_license_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_driving_license_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_driving_license_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/dashboard_image" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/driving_license"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_insurance_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_insurance_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_insurance_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_insurance_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_insurance_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_insurance_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_insurance_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_insurance_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_insurance_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_insurance_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/registration"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_registration_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_registration_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_registration_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_registration_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_registration_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_registration_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_registration_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_registration_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_registration_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_registration_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/dealer_info_and_maintenance"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_tax_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_tax_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_tax_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_tax_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_tax_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_tax_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_tax_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_tax_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_tax_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_tax_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/finance_and_insurance"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_maintenance_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_maintenance_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_maintenance_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_maintenance_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_maintenance_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_maintenance_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_maintenance_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_maintenance_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_maintenance_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_maintenance_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/others"
+                    android:textColor="@color/quantum_black_100"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_car_img1add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_car_img1loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_car_img1"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img1unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img1selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_car_img2add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_car_img2loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_car_img2"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img2unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img2selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <ImageView
+                            android:id="@+id/wallet_car_img3add"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/add_poi_image" />
+
+                        <ProgressBar
+                            android:id="@+id/wallet_car_img3loading"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone" />
+
+                        <com.otcengineering.white_app.components.RoundedCornersImageView
+                            android:id="@+id/wallet_car_img3"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:scaleType="centerCrop"
+                            android:visibility="gone" />
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img3unselected"
+                            style="@style/wallet_image_unselected_background"
+                            android:visibility="gone">
+
+                            <View style="@style/wallet_trash_icon_background" />
+
+                            <ImageView style="@style/wallet_trash_icon" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/wallet_car_img3selected"
+                            style="@style/wallet_image_selected_background"
+                            android:visibility="gone">
+
+                            <ImageView style="@style/wallet_image_selected" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <FrameLayout
+            android:id="@+id/wallet_btnScrollUp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/circle_red_background"
+            android:backgroundTint="@color/colorPrimary"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_up_white" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/wallet_layoutEdit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/button_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/wallet_btnCancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="@string/cancelar"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/wallet_btnSelectAll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="@string/select_all"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorWhite" />
+
+        <TextView
+            android:id="@+id/wallet_btnDelete"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.33"
+            android:gravity="center"
+            android:text="@string/delete"
+            android:textColor="@color/colorWhite"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

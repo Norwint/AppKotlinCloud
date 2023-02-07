@@ -1,0 +1,668 @@
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
+    <string name="app_name" translatable="false">ConnecTech</string>
+
+    <string name="offline">Please check your internet connection</string>
+
+
+    <!--Welcome strings-->
+    <string name="login">Login</string>
+    <string name="login_mayus">LOGIN</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="sign_up_mayus">SIGN UP</string>
+    <string name="search_device_connect_dongle">Search devices and connect with dongle</string>
+    <string name="error_default">Error</string>
+
+    <!--Login strings-->
+    <string name="obligation">Mandatory *</string>
+    <string name="nicknamest">Nickname *</string>
+    <string name="phone">Phone *</string>
+    <string name="phone_number">Phone</string>
+    <string name="passwordst">Password *</string>
+    <string name="error"><i>(Error)</i></string>
+    <string name="forgot"><u>Forgot your password?</u></string>
+    <string name="pseudonym">Pseudonym</string>
+    <string name="chamin">Minimum 10 characters</string>
+    <string name="nickname">Nickname</string>
+    <string name="password">Password</string>
+    <string name="invalid_userorpass">Invalid username or password</string>
+    <string name="user_blocked">User blocked</string>
+    <string name="user_profile_required">User profile required</string>
+
+    <!--SendPassword strings-->
+    <string name="sendpass_mayus">SEND PASSWORD</string>
+    <string name="sendpass">Send password</string>
+    <string name="email">Email</string>
+
+
+    <string name="verification_text">A SMS has been sent with \n
+    the verification code at</string>
+
+
+    <!--SignUp strings-->
+    <string name="eadressst">E-mail address *</string>
+    <string name="retype_passsp">Retype password *</string>
+    <string name="retype_pass">Retype password</string>
+    <string name="continu">Continue</string>
+    <string name="yourmail">your@mail.com</string>
+    <string name="yourmobilephone">Your mobile phone</string>
+    <string name="mobile_phonesp">Mobile phone number *</string>
+    <string name="mobile_phone">Mobile phone</string>
+    <string name="emailsp">E-mail *</string>
+    <string name="loading">Loading…</string>
+
+    <!--<string name="searchBLE">Looking for devices...</string>-->
+    <!--SignUp strings-->
+
+
+    <!--Dialog SendPassword-->
+
+    <!--Dialog SignUp-->
+    <string name="cancelar">Cancel</string>
+
+    <!--SecondSignUp-->
+    <string name="vin_numbersp">VIN *</string>
+    <string name="vin_number">VIN</string>
+    <string name="car_modelsp">Car model *</string>
+    <string name="serial_numbersp">Serial number *</string>
+    <string name="serial_number">Serial Number </string>
+    <string name="dealer_shipsp">Dealership *</string>
+    <string name="dealer_ship">Dealership</string>
+    <string name="autocall">Autocall to Call Center</string>
+    <string name="car_owner">Car owner</string>
+    <string name="countrysp">Country *</string>
+    <string name="regionsp">Region *</string>
+    <string name="locationsp">Location *</string>
+    <string name="data_protection">  Privacy information protection act</string>
+    <string name="legal">Service agreement</string>
+    <string name="disclaimer">  Disclaimer</string>
+    <string name="accept">Accept</string>
+    <string name="the_number_is">The number is on the technical sheet</string>
+    <string name="model_grade">Model and grade car</string>
+    <string name="car_model">Car model</string>
+    <string name="choose_a_dealer">Choose a dealer near your area</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="dd_mm_yy" translatable="false">YYYY-MM-DD</string>
+    <string name="you_location">Your location</string>
+    <string name="full_namesp">Full name *</string>
+    <string name="full_name">Full name</string>
+    <string name="sexsp">Sex *</string>
+    <string name="birth_datesp">Birthdate *</string>
+    <string name="birth_text">Birthdate </string>
+    <string name="country_text">Country </string>
+    <string name="region_text">Region </string>
+
+    <string name="guiones" translatable="false">__</string>
+    <string name="plate">Plate</string>
+    <string name="plate_number">Plate number</string>
+    <string name="search_dealership">Search dealer</string>
+    <string name="dealer_ship_error">Dealership Error</string>
+    <string name="region_error">Region Error</string>
+    <string name="error_select_one_country"> First select one Country</string>
+
+    <!--Navigation tabs-->
+    <string name="title_my_drive">My Drive</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_communications">Communications</string>
+    <string name="title_my_routes">My routes</string>
+    <string name="title_my_profile">My profile</string>
+    <string name="title_settings">Settings</string>
+    <string name="title_documents">Documents</string>
+
+    <!--My profile strings-->
+
+    <string name="country">Country</string>
+
+
+    <string name="edit">EDIT</string>
+    <string name="birthday">Birthdate</string>
+    <string name="sex">Sex</string>
+    <string name="region1">Region</string>
+    <string name="location1">Location</string>
+    <string name="address">Address</string>
+    <string name="driving_license">Driving license</string>
+    <string name="new_password">New password</string>
+    <string name="save">Save</string>
+    <string name="find_my_car">Find my car</string>
+
+    <string name="nickname_prof" translatable="false">Green Artwuritwu</string>
+
+    <!--My Drive Settings-->
+    <string name="notifications_push">Notifications push</string>
+    <string name="rewards">Rewards</string>
+    <string name="barrita" translatable="false">/</string>
+
+    <!--Settings strings-->
+    <string name="privacy_profile">Privacy profile</string>
+    <string name="rankings">Rankings</string>
+    <string name="no_participate"><b>Not participate</b></string>
+    <string name="participate"><b>Participate</b></string>
+    <string name="visible_all">Visible to all</string>
+    <string name="visible_friends">Visible to friends</string>
+    <string name="no_visible">Not visible</string>
+    <string name="friendship_invitation">Friendship invitation</string>
+    <string name="user_post">User post</string>
+    <string name="connectech_post">ConnecTech post</string>
+    <string name="connectech_private_message">ConnecTech private message</string>
+    <string name="dealer_post">Dealer post</string>
+    <string name="dealer_private_message">Dealer private message</string>
+
+    <!--Temas legales-->
+    <string name="privacy_info">Privacy information protection act</string>
+    <string name="connectech_ser">ConnecTech service agreement</string>
+
+    <!--Sin definir-->
+    <string name="add">ADD</string>
+    <string name="delete">Delete</string>
+
+    <!--Valores de comprobación-->
+    <string name="caracter_extraños" translatable="false">&lt;&gt;&quot;&apos;&amp;[]{}?¿!¡^*¨-_.,:;%/\|@·#$()=+-</string>
+    <string name="caracter_extraños_excepcion_nums" translatable="false">&lt;&gt;&quot;&apos;&amp;[]{}?¿!¡^*¨_.,:;%/\|@·#$()=+0123456789</string>
+    <string name="letras_especiales" translatable="false">ÁáÉéÍíÓóÚúÑñÄäËëÏïÖöÜüÀàÈèÌìÒòÙù</string>
+
+    <!--MileageApp, Eco.driving, Safety driving-->
+    <string name="mileage">Mileage</string>
+    <string name="daily">Daily</string>
+    <string name="weekly">Weekly</string>
+    <string name="monthly">Monthly</string>
+    <string name="title_tips">Tips</string>
+    <string name="message">Message</string>
+
+    <!--MileageApp, Eco.driving, Safety driving-->
+    <string name="eco_driving">Eco-driving</string>
+    <string name="safety_driving">Safety driving</string>
+    <string name="share">Share</string>
+
+    <!-- Rankings -->
+    <string name="best_drive_ranking">Best drivers ranking</string>
+    <string name="mileage_ranking">Mileage ranking</string>
+    <string name="eco_driving_ranking">Eco-driving ranking</string>
+    <string name="safety_driving_ranking">Safety driving ranking</string>
+    <string name="local_ranking">Local ranking</string>
+    <string name="global_ranking">Global ranking</string>
+    <string name="go_to_my_position"><u>Go to my position</u></string>
+    <string name="invite">Invite</string>
+    <string name="invited">Invited</string>
+    <string name="profile_visible">Public profile</string>
+    <string name="profile_not_visible">Profile not visible</string>
+    <string name="profile_only_friends">Profile only friends</string>
+    <string name="title_activity_share">Share Activity</string>
+
+    <!-- Location and security -->
+    <string name="location">Location</string>
+
+    <string name="check">Check</string>
+    <string name="call_to_call_center">Call to Call Center</string>
+
+    <!-- Communications -->
+    <string name="search">Search</string>
+    <string name="posts">Posts</string>
+    <string name="dealer">Dealer</string>
+
+    <string name="all">All</string>
+    <string name="near_to_you">Near you</string>
+    <string name="friends">Friends</string>
+    <string name="general_posts">General posts</string>
+    <string name="friends_posts">Friends posts</string>
+    <string name="invitations">Invitations</string>
+    <string name="message_to_me">Messages to me</string>
+
+    <!-- My routes-->
+    <string name="autosave">Autosave</string>
+    <string name="planned">Planned</string>
+    <string name="done">Done</string>
+    <string name="favorites">Favorites</string>
+    <string name="new_route">New route</string>
+    <string name="select_all">Select all</string>
+    <string name="edit_route">Edit route</string>
+    <string name="add_to_favorite">Add to favorites</string>
+    <string name="remove_from_favorite">Remove from favorites</string>
+    <string name="share_route">Share route</string>
+    <string name="share_autosaved_route">Share autosaved route</string>
+    <string name="share_planned_route">Share planned route</string>
+    <string name="share_done_route">Share done route</string>
+    <string name="delete_route">Delete route</string>
+    <string name="gps_is_necessary">Is necessary to activate the GPS in order to show your current location</string>
+    <string name="cancel">Cancel</string>
+    <string name="activate">Activate</string>
+    <string name="autosaved_route">Autosave route</string>
+    <string name="planned_route">Planned route</string>
+    <string name="done_route">Done route</string>
+    <string name="start">Start</string>
+    <string name="information">Information</string>
+    <string name="current_location">Current location</string>
+    <string name="add_location">Add location</string>
+    <string name="calculate">Calculate</string>
+    <string name="error_retrieving_info_from_google_maps">Error retrieving info from Google Maps</string>
+    <string name="error_retrieving_info_from_server">Error retrieving info from Server</string>
+    <string name="please_select_locations">Please select locations</string>
+    <string name="title_of_route">Title of the route *</string>
+    <string name="save_route">Save route</string>
+    <string name="description">Description</string>
+    <string name="max_chars">max. 140</string>
+    <string name="poi_type_hint">Beach, castle, danger, hotel…</string>
+    <string name="title_point_of_interest">Title of point of interest *</string>
+    <string name="type_point_of_interest">Type of point of interest *</string>
+    <string name="add_picture">Add picture</string>
+    <string name="new_point">New point</string>
+    <string name="add_point_of_interest">Add point of interest</string>
+    <string name="type_of_poi">Type of point of interest</string>
+    <string name="finish_route">Finish route</string>
+    <string name="unfavorite">Unfavorite</string>
+    <string name="active_filter">Active filter</string>
+
+    <!-- Errors My Routes -->
+
+
+    <!--Filter-->
+    <string name="title_activity_filters_favourites" translatable="false">FiltersFavouritesActivity</string>
+
+    <string name="select_action">Select action</string>
+    <string name="select_from_gallery">Select photo from gallery</string>
+    <string name="capture_from_camera">Capture photo from camera</string>
+    <string name="already_liked">Already liked</string>
+    <string name="send_report">Report inappropriate post</string>
+    <string name="send_report_correctly">Report sent correctly</string>
+    <string name="hide">Hide</string>
+    <string name="active_route">Active route</string>
+
+    <string name="friend">Friend</string>
+
+    <string name="status">Status</string>
+
+    <string name="send_post">Send post</string>
+    <string name="post_type_text">Message only</string>
+    <string name="post_type_image">Add picture</string>
+    <string name="post_type_video">Add video</string>
+    <string name="post_type_route">Add route</string>
+    <string name="write_here">Write here</string>
+    <string name="add_video_link">Add video link (youtube)</string>
+    <string name="add_route">Add route</string>
+    <string name="properly_posted">Properly posted</string>
+
+    <string name="search_no_results">Sorry, we have not found results with your search criteria</string>
+
+    <string name="info">Info</string>
+    <string name="block_user">Block user</string>
+    <string name="unblock_user">Unblock user</string>
+    <string name="message_obligation">Message*</string>
+    <string name="mileage_post_title">Mileage post</string>
+    <string name="eco_driving_post_title">Eco-driving post</string>
+    <string name="safety_driving_post_title">Safety driving post</string>
+    <string name="select_route">Select route</string>
+
+    <string name="latitude_value">Latitude: %1$f</string>
+    <string name="longitude_value">Longitude: %1$f</string>
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="bahasa_indonesia">Bahasa Indonesia</string>
+    <string name="unfriend">Unfriend</string>
+    <string name="manual">Manual</string>
+    <string name="download_pdf">Download PDF</string>
+    <string name="manual_new_version">There is a new version of \nthe manual available</string>
+    <string name="registration">Registration</string>
+    <string name="car_pictures">Car pictures</string>
+    <string name="deleted_images">Deleted images</string>
+    <string name="pictures">Pictures</string>
+    <string name="invited_correctly">Invited correctly</string>
+    <string name="add_route_to_favorites_correctly">Add route to favorites correctly</string>
+    <string name="remove_route_to_favorites_correctly">Remove route to favorites correctly</string>
+
+
+    /* New Entries 2018-1-28 */
+
+    <string name="global_ranking_best_drive">Global ranking\nbest drive</string>
+    <string name="local_ranking_best_drive">Local ranking\nbest drive</string>
+    <string name="average">Average</string>
+    <string name="total">Total</string>
+
+
+    <string name="km_liters">km/liter</string>
+    <string name="badges">Badges</string>
+    <string name="score">Score</string>
+    <string name="driving_time">Driving time</string>
+
+
+    <string name="fuel">Fuel</string>
+
+    <string name="my_planned_routes">My planned routes</string>
+    <string name="my_done_routes">My done routes</string>
+    <string name="my_friend_planned">Friends planned routes</string>
+    <string name="my_friends_done">Friends done routes</string>
+    <string name="community_planed_routes">Community planned routes</string>
+    <string name="community_done_routes">Community done routes</string>
+    <string name="resend_sms">Resend SMS</string>
+    <string name="change_phone">Change phone</string>
+    <string name="sms_key">SMS Key *</string>
+    <string name="title">Title</string>
+    <string name="example_route_title">Example: Delhi to Varanasi</string>
+    <string name="share_connectech_community">Share with ConnecTech community</string>
+    <string name="share_connectech_friends">Share with your ConnecTech friends</string>
+    <string name="ok">OK</string>
+    <string name="global">Global</string>
+    <string name="local">Local</string>
+    <string name="last_connection">Last connection</string>
+
+
+    /* New Entries 2018-1-29 */
+
+    <string name="close">Close</string>
+
+
+    <string name="server_error">Server error</string>
+    <string name="loading_title">Loading…</string>
+
+    <!--  SignUpActivity -->
+    <string name="malformed_data">Malformed date</string>
+    <string name="malformed_location">Malformed Location</string>
+    <string name="malformed_name">Malformed name</string>
+    <string name="malformed_plate">Malformed plate</string>
+    <string name="malformed_phone">Malformed phone</string>
+    <string name="require_input">Required input</string>
+    <string name="phone_error">Phone error</string>
+    <string name="username_error">Username Error</string>
+    <string name="secret_error">Secret Error</string>
+    <string name="secret_number_empty">Secret number is empty</string>
+    <string name="username_password_error">Username or Password Error</string>
+    <string name="secret_number_incorrect">Secret number is not correct</string>
+    <string name="nickname_error">Nickname Error</string>
+    <string name="password_error">Password Error</string>
+    <string name="date_error">Date error</string>
+    <string name="location_error">Location error</string>
+    <string name="name_error">Name error</string>
+    <string name="plate_error">Plate error</string>
+    <string name="required_field_missing">Required Fields missing</string>
+    <string name="serial_number_error">Serial number error</string>
+    <string name="auth_dongle">Authenticate dongle - authenticate() library no check true</string>
+    <string name="authentication">Authentication</string>
+    <string name="regis_dongle">Registering dongle - registerDongle() no check true</string>
+    <string name="dongle_server_error">Registering dongle - Server error</string>
+    <string name="enabling_user">Enabling user</string>
+    <string name="error_enabling_user">Error enabling user</string>
+    <string name="field">Field</string>
+    <string name="is_empty">is empty</string>
+    <string name="nickname_no_white">The nickname can\'t have white space</string>
+    <string name="not_valid_for_nickname">is not valid for nickname</string>
+    <string name="email_error">Email error</string>
+    <string name="email_not_correct">Email not correct</string>
+    <string name="phone_lower_11">Phone lower than 11 numbers</string>
+    <string name="phone_invalid_format">Phone not formatted properly. Please, introduce your phone as Country Code + Number.</string>
+    <string name="error_retype">Error in retype password</string>
+    <string name="techniques">techniques</string>
+    <string name="unable_locate_car">Unable to locate car</string>
+    <string name="not_found">Not found</string>
+    <string name="error_password">it has to have a letter and a number minimum, and more than 10 digits</string>
+
+
+    /* push notifications */
+    <string name="NEW_FRIEND_REQUEST">You have a new friend request</string>
+    <string name="NEW_FRIEND_POST">A friend has posted a new post</string>
+    <string name="NEW_CONNECTECH_POST">ConnecTech has posted a new post</string>
+    <string name="NEW_CONNECTECH_MESSAGE">ConnecTech sent you a message</string>
+    <string name="NEW_DEALER_POST">Dealer has posted a new post</string>
+    <string name="NEW_DEALER_MESSAGE">Dealer sent you a message</string>
+    <string name="FRIEND_SHARING_LOCATION">A friend shared his location</string>
+
+
+    <string name="title_activity_batges">Badges</string>
+    <string name="behavior">Behavior</string>
+    <string name="view_all">View all</string>
+    <string name="title_activity_badge">Badge</string>
+    <string name="uploading">Uploading…</string>
+    <string name="fetching_car_loc">Fetching car\'s location…</string>
+    <string name="you">You</string>
+    <string name="update">Update</string>
+
+    <string name="fota_title">Updating dongle. Please wait…</string>
+
+    <string name="correctly_working">Correctly working</string>
+    <string name="odometer">Odometer</string>
+    <string name="hazards">Hazards</string>
+    <string name="no">No</string>
+    <string name="On">On</string>
+    <string name="doors">Doors</string>
+    <string name="low_beams">Low beam</string>
+    <string name="high_beams">High beam</string>
+    <string name="engine">Engine</string>
+    <string name="fault_car">Fault car</string>
+    <string name="change_language">Changing language…</string>
+    <string name="door">Door</string>
+    <string name="nickname_ast">Nickname *</string>
+    <string name="email_ast">E-mail *</string>
+    <string name="mobile_phone_ast">Mobile phone *</string>
+    <string name="register_dongle">Registering dongle</string>
+    <string name="connecting_dongle">Connecting to dongle</string>
+    <string name="getting_dongle_state">Getting dongle\'s state</string>
+    <string name="dongle_registered">Dongle already registered. Please, contact with the Call Center.</string>
+    <string name="reading_data">Reading data</string>
+    <string name="no_connect_dongle">Cannot connect to the dongle.</string>
+    <string name="no_register_dongle">Cannot register the dongle. Please, contact with the Call Center</string>
+    <string name="step_x_y">Step %d of %d</string>
+    <string name="update_dongle_">Do you want to upgrade the dongle to the version %s?</string>
+    <string name="dongle_updated_ok">DONGLE UPDATED CORRECTLY</string>
+    <string name="dongle_updated_nok">ERROR UPDATING DONGLE</string>
+    <string name="update_dongle_question">Upgrade dongle to version %s?</string>
+    <string name="won_badge">Congratulations, you have won the badge %s!</string>
+    <string name="no_location">Location not enabled. Please, enable it to connect to dongle.</string>
+    <string name="bad_sn">Invalid serial number</string>
+    <string name="opened">Opened</string>
+    <string name="closed">Closed</string>
+    <string name="title_notifications">Notification History</string>
+    <string name="FW_UPDATED">The dongle has been updated correctly</string>
+    <string name="FW_ERROR">Error updating the dongle</string>
+    <string name="FW_DELETING_IMAGE">Deleting dongle image</string>
+    <string name="FW_SENDING_NEW_FW">Sending dongle image</string>
+    <string name="FW_RESTART_DONGLE">Restarting dongle</string>
+    <string name="VEHICLE_STATUS_DOOR">The door is</string>
+    <string name="VEHICLE_STATUS_ENGINE">The vehicle is</string>
+    <string name="update_dongle">Do you want to update the dongle?</string>
+    <string name="activation_4_digits">The activation number must be 4 digits long.</string>
+    <string name="retype_pass_error">Error in retype password</string>
+    <string name="lower_than_11">Lower than 11 numbers</string>
+    <string name="_error">Error</string>
+    <string name="FW_UPDATE_ASK">Updating Dongle</string>
+    <string name="logout">Log out</string>
+
+    <string name="storage">Storage</string>
+    <string name="mmc_post">ConnecTech Post</string>
+    <string name="mmc_privatge_message">ConnecTech private message</string>
+    <string name="connectech" translatable="false">ConnecTech</string>
+    <string name="dashboard_and_status" translatable="false">Dashboard &amp; status</string>
+    <string name="location_and_assistance">Location &amp; Assistance</string>
+    <string name="open">Open</string>
+    <string name="months_no_connect">3 months without connecting with the dongle.</string>
+    <string name="days_0">The 14 days have ended and all user information has been deleted.</string>
+    <string name="days_n">Connect with the dongle in the next %s days or the information of the app will be deleted.</string>
+    <string name="new_phone_txt">It has been detected that a user has connected to the %s account</string>
+    <string name="new_phone_subtitle">A log out will be done automatically below. Any doubt contact the call center</string>
+    <string name="insurance_term_date">Insurance term date</string>
+    <string name="finance_term_date">Finance term date</string>
+    <string name="car_registration">Car Registration</string>
+    <string name="blood_type">Blood type</string>
+    <string name="yes">Yes</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="starting_update">Starting update…</string>
+    <string name="restarting_dongle">Restarting dongle…</string>
+    <string name="not_available">Not available</string>
+    <string name="service_required">Service required</string>
+    <string name="updating_profile">Updating profile…</string>
+    <string name="dongle_connection_error">Dongle connection error</string>
+    <string name="connection_contact_call_center">There was a problem connecting with the dongle. Please, contact with the Call Center</string>
+    <string name="no_milles">Odometer in miles is not supported by the app.</string>
+    <string name="you_want_exit">Are you sure you want to exit the application?</string>
+    <string name="call_call_center">Do you want to call the Call Center?</string>
+    <string name="language_changed">Language changed</string>
+    <string name="app_restart">The app will restart to apply the changes</string>
+    <string name="restart_app">Restart App</string>
+    <string name="accepted">Accepted</string>
+    <string name="contact_call_center">Please, contact with the Call Center.</string>
+    <string name="account_in_other_device">This account already exists on another mobile device.</string>
+    <string name="you_want_change">If you want to change the device, the information on the previous device will be deleted.</string>
+    <string name="Undefined">Undefined</string>
+    <string name="Station">Station</string>
+    <string name="Food_And_Drinks">Food and Drinks</string>
+    <string name="Gas_Station">Gas Station</string>
+    <string name="Post_Office">Post office</string>
+    <string name="Parking_Lot">Parking lot</string>
+    <string name="Shopping">Shopping</string>
+    <string name="Hotels">Hotels</string>
+    <string name="Theather">Theater</string>
+    <string name="Museum">Museum</string>
+    <string name="Others">Others</string>
+    <string name="dismiss_route">Do you want to dismiss the route?</string>
+    <string name="unsaved_route">Unsaved route</string>
+    <string name="you_have_active_route">You have an active route. Do you want to cancel the previous route and start this route?</string>
+    <string name="in_route">In route</string>
+    <string name="download_route">Downloading route</string>
+    <string name="saving_route">Saving Route...</string>
+    <string name="save_pois">Saving POI\'s...</string>
+    <string name="phone_updated_good">The phone has been updated correctly</string>
+    <string name="connect_dongle">please connect with the dongle</string>
+    <string name="send_pass">We have sent the password to your mail account</string>
+    <string name="you_send_post">Are you sure you want to send this post?</string>
+    <string name="error_try_again">Error. Please, try again.</string>
+    <string name="yt_bad_url">Malformed YouTube URL. Please, introduce a valid YouTube link.</string>
+    <string name="long_message">The message is longer than 140 characters. Please, shorten your message and try again.</string>
+    <string name="no_share_post">The post couldn\'t be shared. Please, try again. Error:</string>
+    <string name="server_timeout">Server Timeout</string>
+    <string name="high">High</string>
+    <string name="low">Low</string>
+    <string name="you_call_dealer">Do you want to call the dealer?</string>
+    <string name="geo_alarm_off">Geofencing Alarm: 0 km disabled</string>
+    <string name="geo_alarm_n">Geofencing Alarm: %d km square</string>
+    <string name="you_have_new_message">You have a new ConnecTech message</string>
+    <string name="n_years">%d years</string>
+    <string name="one_year">1 year</string>
+    <string name="one_month">1 month</string>
+    <string name="n_months">%d months</string>
+    <string name="zero_m_zero_y">0 months / 0 years</string>
+    <string name="maintenance_timing">Maintenance timing</string>
+    <string name="no_maintenance_timing">No maintenance timing</string>
+    <string name="maturity_n">Maturity: %s</string>
+    <string name="new_app_update">There is a new version of the app. Do you want to update it?</string>
+    <string name="later">Later</string>
+    <string name="you_app_is_updated">You have the app in the most up-to-date version</string>
+    <string name="extension_not_good">Extension %s not supported.</string>
+    <string name="no_upload_img">Cannot upload image.</string>
+    <string name="new_badge">New badge</string>
+    <string name="you_vehicle_is_out">Your vehicle is outside the Geofencing Area at %s</string>
+    <string name="the_indicator_is_on">The %s indicator is on at %s</string>
+    <string name="vehicle_condition">Vehicle condition</string>
+    <string name="Hospitals">Hospitals</string>
+    <string name="Bank">Bank</string>
+    <string name="call_to_dealer">Call to Dealer</string>
+    <string name="thank_for_driving">Thank you for driving with me!</string>
+    <string name="blood_type_st">Blood type *</string>
+    <string name="driving_license_date_st">Driving license date *</string>
+    <string name="car_registration_date_st">Car registration date *</string>
+    <string name="finance_term_date_st">Finance term date *</string>
+    <string name="start_dd">Start:</string>
+    <string name="end_dd">End:</string>
+    <string name="insurance_term_date_st">Insurance term date *</string>
+    <string name="app_vers" translatable="false">ConnecTech Connect ver x.x.x</string>
+    <string name="your_posts">Your post:\nMonthly/Total</string>
+    <string name="current_address">Current Address</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="loading_picture">Loading Picture…</string>
+    <string name="position_lights">Position lights</string>
+    <string name="dongle">Dongle</string>
+    <string name="search_dongle">Search dongle</string>
+    <string name="dashboard_image">Dashboard image</string>
+    <string name="dealer_info_and_maintenance">Dealer info &amp; Maintenance</string>
+    <string name="finance_and_insurance">Finance &amp; Insurance</string>
+    <string name="others">Others</string>
+    <string name="application_settings">Application Settings</string>
+    <string name="save_recent_trip_on_this_device">Save recent trip on this device</string>
+    <string name="search_updates">Search updates</string>
+    <string name="update_the_firmware_of_the_dongle_automatically">Update the firmware of the dongle automatically</string>
+    <string name="third_party_licences">Third party licences</string>
+    <string name="your_car_age">Your car age</string>
+    <string name="total_mileage">Total mileage</string>
+    <string name="fuel_level">Fuel level</string>
+    <string name="drive_monthly_total">Drive (Monthly / Total)</string>
+    <string name="your_post">Your post</string>
+    <string name="fuel_consumption">Fuel consumption</string>
+    <string name="driving">Driving</string>
+    <string name="score_n">Score\n</string>
+    <string name="finance">Finance</string>
+    <string name="loan_status">Loan status</string>
+    <string name="maturity">Maturity:</string>
+    <string name="do_not_save">Do not save</string>
+    <string name="geofencing" translatable="false">Geofencing</string>
+    <string name="abs_fault">ABS FAULT</string>
+    <string name="airbag_fault">AIRBAG SYSTEM FAULT</string>
+    <string name="asc_fault">ASC SYSTEM FAULT</string>
+    <string name="transmission_fault">TRANSMISSION FAULT</string>
+    <string name="low_brake_fluid">LOW BRAKE FLUID</string>
+    <string name="brake_fault">BRAKE FAULT</string>
+    <string name="charging_fault">CHARGING SYSTEM FAULT</string>
+    <string name="electrical_fault">ELECTRICAL SYSTEM FAULT</string>
+    <string name="engine_fault">ENGINE FAULT</string>
+    <string name="immobilizer_fault">IMMOBILIZER SYSTEM FAULT</string>
+    <string name="keyless_fault">KEYLESS OPERATION FAULT</string>
+    <string name="oil_pressure">OIL PRESSURE</string>
+    <string name="steering_fault">POWER STEERING FAULT</string>
+    <string name="steering_lock">STEERING LOCK</string>
+    <string name="thank_you_for_driving">Thank you for driving</string>
+    <string name="thank_for_driving_notif">This time, you traveled %s km. Driving time is %sh %sm.</string>
+    <string name="thank_for_driving_desc">You drove %s km and the time is %s hours %s mins during last Engine on.\nI wish you a comfortable driving.\nPlease contact your dealer if there are any notices.</string>
+    <string name="gps_not_found">GPS signal not found. Please, try again or check if location is enabled in the phone.</string>
+    <string name="unactivated_email">Unactivated email address: %s</string>
+    <string name="user_email_not_validated">User email not validated</string>
+    <string name="times">times</string>
+    <string name="my_routes">My routes</string>
+    <string name="my_profile">My profile</string>
+    <string name="notification_history">Notification History</string>
+    <string name="decline">Decline</string>
+    <string name="accept_friend">Accept</string>
+    <string name="periodic_maintenance_now">Time for periodic maintenance now</string>
+    <string name="its_time_for_maintenance">It is time for periodic maintenance. We recommend to visit and contact at CONNECTECH authorized dealers or other specialist.</string>
+    <string name="your_vehicle_is_outside_geofencing">Your vehicle is outside the Geofencing Area at %s</string>
+    <string name="post">Post</string>
+    <string name="no_location_enable_map">Location not enabled. Please enable it to use the map.</string>
+    <string name="open_settings">Open Settings</string>
+    <string name="location_permission_not_accepted">Location Permission not accepted. Please enable it to use the map.</string>
+    <string name="cannot_get_location">Cannot get the location. Please, try later.</string>
+    <string name="the_car_should_be_stopped">The car should be stopped with the ignition switch on.</string>
+    <string name="please_keep_car_stopped">Please, keep the car stopped with the ignition switch on.</string>
+    <string name="nickname_bigger_than_4_chars">Nickname it has to be greater than 4 characters</string>
+    <string name="x_x_at_x">%s %s at %s</string>
+    <string name="change_password">Change password</string>
+    <string name="pass_temp_one_hour">The password has a temporality of one hour.</string>
+    <string name="near">Near</string>
+    <string name="email_exists_sign_up">This email already exists. Log in to finish the sign up.</string>
+    <string name="reentry_mail">Reentry mail</string>
+    <string name="extend_it">Extended it</string>
+    <string name="your_vehicle_outside_notif">Your vehicle is outside the Geofencing Area</string>
+    <string name="blocked">Blocked</string>
+    <string name="payment">Payment</string>
+    <string name="title_activity_orders">My Orders</string>
+    <string name="keyless">Keyless</string>
+    <string name="poll">Polls</string>
+    <string name="last_register">Last register</string>
+    <string name="espanol" translatable="false">Español</string>
+    <string name="catala" translatable="false">Català</string>
+    <string name="my_orders">My Orders</string>
+    <string name="initial_date">Initial Date</string>
+    <string name="survey_not_responeded">Survey not responded</string>
+    <string name="previous">Previous</string>
+    <string name="next">Next</string>
+    <string name="invoice">Invoice</string>
+    <string name="total_price">Total Price:</string>
+    <string name="apply_filter">Apply Filter</string>
+    <string name="generate_invoice">Generate Invoice</string>
+    <string name="the_search_cannot_find_any_item_nwith_this_name">The search cannot find any item with this name.</string>
+    <string name="user_all_surveys_done_title">All surveys done!</string>
+    <string name="user_all_surveys_done_desc">Thank you for answering all surveys!</string>
+    
+    <string name="sms_verification">A SMS has been sent with the activation code to the phone number \n%s</string>
+    <string name="none"></string>
+    <string name="error_phone">Phone not found</string>
+    <string name="add_vehicle">Add new vehicle</string>
+    <string name="activation_code">Activation Code:</string>
+    <string name="add_vin">Add By VIN</string>
+    <string name="no_vehicles">No Vehicle Available</string>
+    <string name="vehicle_profile">Vehicle Profile</string>
+    <string name="vehicle_name">Vehicle Name*</string>
+</resources>
